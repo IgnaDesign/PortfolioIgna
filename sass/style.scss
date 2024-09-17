@@ -1,0 +1,20 @@
+/* BASE */
+@import "./base/resets";
+
+/* UTILITIES */
+@import "./utilities/variables";
+@import "./utilities/mixing";
+
+/* COMPONENTS*/
+@import "./components/bootstrap";
+
+/* LAYOUT */
+@import "./layout/main-index";
+@import "./layout/main-web";
+@import "./layout/main-paquetes";
+@import "./layout/main-graphicdesign";
+@import "./layout/footer";
+
+/* MEDIA QUERY */
+
+

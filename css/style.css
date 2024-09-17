@@ -1,0 +1,937 @@
+@charset "UTF-8";
+/* BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* UTILITIES */
+/* PALETA DE COLORES */
+/* TIPOGRAFIAS */
+/* TAMAÑO DE FUENTE */
+.information {
+  padding: 2rem;
+  position: relative;
+  animation: fadeIn 2s ease-in-out; }
+
+@keyframes floating {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-15px);
+    /* Ajusta la cantidad de "flotación" */ }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 99; }
+
+body {
+  overflow-x: hidden;
+  /* BACKGROUND INDEX */ }
+  body #particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    background-image: url(../assets/img/fondo.png); }
+
+.p-content {
+  background-color: #000000;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  margin: 3rem 3rem 3rem 3rem;
+  border: 5px groove #FF2A00 !important; }
+  .p-content:hover {
+    filter: drop-shadow(0 0 10px #FF2A00);
+    transform: scale(1.05);
+    transition: 300ms; }
+  .p-content a {
+    color: #FF2A00;
+    text-decoration: underline; }
+  .p-content .highlight {
+    color: #FF5733;
+    /* Cambia este color por el que desees */
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-weight: 400;
+    /* Puedes agregar otros estilos, si lo deseas */ }
+
+/* COMPONENTS*/
+/* ENCABEZADO GENERAL*/
+/* BOOTSTRAP */
+.navbar-nav {
+  padding-left: 2rem;
+  font-size: 1.5rem; }
+
+.nav-link {
+  font-family: "Bona Nova SC", serif;
+  font-style: normal;
+  font-weight: 700; }
+
+.dropdown-menu-nosotros {
+  background-color: #FF2A00;
+  text-align: center; }
+  .dropdown-menu-nosotros :hover {
+    filter: drop-shadow(0 0 10px #000000);
+    transform: scale(1.05);
+    transition: 300ms; }
+  .dropdown-menu-nosotros .dropdown-item {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem; }
+  .dropdown-menu-nosotros .dropdown-divider {
+    border-color: #000000 !important; }
+
+/* LOGO */
+.logo {
+  width: 200px; }
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+  .navbar-brand :hover {
+    filter: drop-shadow(0 0 10px #FFFFFF);
+    transform: scale(1.1);
+    transition: 100ms;
+    width: 150px; }
+
+/* LAYOUT */
+/* BACKGROUND */
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background-image: url(../assets/img/fondo.png); }
+
+main {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  /* Cambiado a columna para manejar la imagen final en el flujo del documento */
+  align-items: center;
+  height: auto;
+  /* Ajusta la altura según el contenido */
+  /* Contenedor para la portada y las tarjetas */
+  /* ENLACES A PAGINA - WEB DEVELOPMEN & GRAPHIC DESIGN */ }
+  main .container-dos {
+    display: flex;
+    justify-content: space-between;
+    /* Espacia la portada y las tarjetas */
+    align-items: flex-start;
+    /* Alinea al principio */
+    width: 100%;
+    max-width: 90%;
+    /* Limita el ancho máximo del contenedor */
+    padding: 20px;
+    /* Espacio alrededor del contenido */
+    margin-bottom: 20px;
+    /* Espacio debajo del contenedor de portada y tarjetas */ }
+  main .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* Alinea verticalmente al principio */
+    flex-grow: 1;
+    margin-right: 20px;
+    /* Espacio entre la portada y las tarjetas */ }
+  main .portada-index {
+    flex: 1;
+    margin-top: 3rem; }
+    main .portada-index img {
+      width: 90%;
+      height: auto;
+      display: block; }
+      main .portada-index img:hover {
+        filter: drop-shadow(0 0 10px #FF2A00);
+        transform: scale(1.05);
+        transition: 300ms; }
+  main .cards-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    /* Espacio entre las tarjetas */
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1rem; }
+  main .e-card {
+    display: flex;
+    flex-direction: column;
+    /* Alinea el contenido verticalmente */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    background: transparent;
+    box-shadow: 0px 8px 28px -9px #FF2A00;
+    position: relative;
+    width: 220px;
+    height: 230px;
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: 0.9rem;
+    text-align: center; }
+    main .e-card .wave {
+      position: absolute;
+      width: 540px;
+      height: 700px;
+      opacity: 0.6;
+      left: 0;
+      top: 0;
+      margin-left: -50%;
+      margin-top: -70%;
+      background: linear-gradient(#FF2A00, #000000 60%, #FFFFFF);
+      border-radius: 40%;
+      animation: wave 55s infinite linear; }
+      main .e-card .wave:nth-child(2), main .e-card .wave:nth-child(3) {
+        top: 210px; }
+      main .e-card .wave:nth-child(2) {
+        animation-duration: 50s; }
+      main .e-card .wave:nth-child(3) {
+        animation-duration: 45s; }
+    main .e-card .icono-web {
+      width: 3.5rem;
+      margin-top: -1em;
+      padding-bottom: 1.5rem; }
+      main .e-card .icono-web:hover {
+        filter: drop-shadow(0 0 10px #FFFFFF);
+        transform: scale(1.1);
+        transition: 300ms; }
+    main .e-card .icono-design {
+      width: 6.5rem;
+      margin-top: -2.8rem;
+      padding-bottom: .1rem; }
+      main .e-card .icono-design:hover {
+        filter: drop-shadow(0 0 10px #FFFFFF);
+        transform: scale(1.1);
+        transition: 300ms; }
+    main .e-card .infotop {
+      text-align: center;
+      font-family: "Bona Nova SC", serif;
+      font-weight: normal;
+      font-size: 1rem;
+      position: absolute;
+      top: 5em;
+      left: 0;
+      right: 0;
+      color: white; }
+      main .e-card .infotop a {
+        text-decoration: none;
+        color: inherit;
+        display: block; }
+        main .e-card .infotop a .texto {
+          font-family: "Bona Nova SC", serif;
+          font-size: 0.8rem;
+          font-weight: normal;
+          position: relative;
+          top: 1em;
+          margin: .2rem .8rem;
+          text-transform: lowercase; }
+        main .e-card .infotop a .texto-2 {
+          font-family: "Bona Nova SC", serif;
+          font-size: 0.8rem;
+          font-weight: normal;
+          position: relative;
+          top: 1em;
+          margin: .2rem .5rem;
+          text-transform: lowercase; }
+    main .e-card.playing .wave {
+      animation: wave 3000ms infinite linear; }
+    main .e-card.playing .wave:nth-child(2) {
+      animation-duration: 4000ms; }
+    main .e-card.playing .wave:nth-child(3) {
+      animation-duration: 5000ms; }
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+  main .app-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que las imágenes se ajusten en múltiples filas si es necesario */
+    gap: 1rem;
+    /* Espacio entre las imágenes */
+    justify-content: left;
+    /* Centra las imágenes horizontalmente */
+    margin: 1rem 0;
+    /* Espacio alrededor del contenedor */
+    margin-left: 9rem; }
+  main .app {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que las imágenes se ajusten si hay muchas */
+    justify-content: center;
+    /* Centra las imágenes dentro del contenedor */ }
+  main .app-icon {
+    width: 3.5rem;
+    /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    margin: 0.15rem;
+    margin-top: -6rem; }
+    main .app-icon:hover {
+      filter: drop-shadow(0 0 10px #FF2A00);
+      transform: scale(1.1);
+      transition: 300ms;
+      transform: translateY(0.5em); }
+
+.container-portada {
+  display: flex;
+  /* Activa flexbox */
+  justify-content: center;
+  /* Alinea el contenido al lado izquierdo */
+  align-items: center;
+  /* Alinea verticalmente al centro */
+  width: 100%;
+  padding: 1rem;
+  /* Espacio alrededor de la portada */ }
+  .container-portada .portada-web {
+    max-width: 40%;
+    /* Limita el ancho de la portada al 40% de la pantalla */
+    height: auto; }
+    .container-portada .portada-web img {
+      width: 100%;
+      /* La imagen ocupará todo el ancho del contenedor */
+      height: auto;
+      /* Mantiene la proporción de la imagen */
+      display: block;
+      /* Asegura que la imagen se comporte como un bloque */
+      transition: transform 0.3s ease;
+      /* Animación en hover */
+      border-radius: 2rem; }
+      .container-portada .portada-web img:hover {
+        filter: drop-shadow(0 0 10px #FF2A00);
+        transform: scale(1.05);
+        transition: 300ms; }
+
+.container-mac {
+  position: absolute;
+  margin-right: -50rem;
+  /* Alinea el contenedor al lado derecho de la pantalla */
+  margin-top: 8rem;
+  /* Centra verticalmente */
+  z-index: 1;
+  /* Asegura que la Mac esté por encima de otros elementos, si es necesario */
+  animation: floating 2s ease-in-out infinite; }
+
+.icons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columnas */
+  grid-template-rows: repeat(2, auto);
+  /* 2 filas */
+  gap: 1rem;
+  /* Espacio entre los íconos */
+  position: absolute;
+  bottom: -19rem;
+  /* Ajusta esta distancia según sea necesario */
+  right: 3rem;
+  transform: translateX(-50%);
+  /* Centra los íconos en relación con el contenedor de la Mac */
+  width: 100%; }
+
+.icon img {
+  width: 50px;
+  /* Ajusta el tamaño de las imágenes según sea necesario */
+  height: auto;
+  /* Mantiene la proporción */ }
+  .icon img:hover {
+    filter: drop-shadow(0 0 10px #FF2A00); }
+
+.macbook {
+  width: 150px;
+  height: 96px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -85px 0 0 -78px;
+  perspective: 500px; }
+  .macbook:hover {
+    filter: drop-shadow(0 0 10px #FF2A00); }
+
+.shadow {
+  position: absolute;
+  width: 60px;
+  height: 0px;
+  left: 40px;
+  top: 160px;
+  transform: rotateX(80deg) rotateY(0deg) rotateZ(0deg);
+  box-shadow: 0 0 60px 40px rgba(0, 0, 0, 0.3);
+  animation: shadow infinite 7s ease; }
+
+.inner {
+  z-index: 20;
+  position: absolute;
+  width: 150px;
+  height: 96px;
+  left: 0;
+  top: 0;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+  animation: rotate infinite 7s ease; }
+
+.screen {
+  width: 150px;
+  height: 96px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 7px;
+  background: #FF2A00;
+  transform-style: preserve-3d;
+  transform-origin: 50% 93px;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  animation: lid-screen infinite 7s ease;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0) 100%);
+  background-position: left bottom;
+  background-size: 300px 300px;
+  box-shadow: inset 0 3px 7px rgba(255, 255, 255, 0.5); }
+
+.screen .logo {
+  position: absolute;
+  width: 20px;
+  height: 24px;
+  left: 50%;
+  top: 50%;
+  margin: -12px 0 0 -10px;
+  transform: rotateY(180deg) translateZ(0.1px); }
+
+.screen .face-one {
+  width: 150px;
+  height: 96px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 7px;
+  background: #000000;
+  transform: translateZ(2px);
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%); }
+
+.screen .face-one .camera {
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background: #FF2A00;
+  position: absolute;
+  left: 50%;
+  top: 4px;
+  margin-left: -1.5px; }
+
+.screen .face-one .display {
+  width: 130px;
+  height: 74px;
+  margin: 10px;
+  background-color: #000;
+  background-size: 100% 100%;
+  border-radius: 1px;
+  position: relative;
+  box-shadow: inset 0 0 2px black;
+  overflow: hidden; }
+  .screen .face-one .display img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(0.8);
+    /* Reduce el tamaño al 80% */
+    transform-origin: center; }
+
+.screen .face-one .display .shade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130px;
+  height: 74px;
+  background: linear-gradient(-135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 47%, rgba(255, 255, 255, 0) 48%);
+  animation: screen-shade infinite 7s ease;
+  background-size: 300px 200px;
+  background-position: 0px 0px; }
+
+.screen .face-one span {
+  position: absolute;
+  top: 85px;
+  left: 57px;
+  font-size: 6px;
+  color: #FF2A00; }
+
+.macbody {
+  width: 150px;
+  height: 96px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 7px;
+  background: #FF2A00;
+  transform-style: preserve-3d;
+  transform-origin: 50% bottom;
+  transform: rotateX(-90deg);
+  animation: lid-macbody infinite 7s ease;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%); }
+
+.macbody .face-one {
+  width: 150px;
+  height: 96px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 7px;
+  transform-style: preserve-3d;
+  background: #dfdfdf;
+  animation: lid-keyboard-area infinite 7s ease;
+  transform: translateZ(-2px);
+  background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%); }
+
+.macbody .touchpad {
+  width: 40px;
+  height: 31px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 4px;
+  margin: -44px 0 0 -18px;
+  background: #FF2A00;
+  background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  box-shadow: inset 0 0 3px #888; }
+
+.macbody .keyboard {
+  width: 130px;
+  height: 45px;
+  position: absolute;
+  left: 7px;
+  top: 41px;
+  border-radius: 4px;
+  transform-style: preserve-3d;
+  background: #000000;
+  background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  box-shadow: inset 0 0 3px #777;
+  padding: 0 0 0 2px; }
+
+.keyboard .key {
+  width: 6px;
+  height: 6px;
+  background: #FF2A00;
+  float: left;
+  margin: 1px;
+  transform: translateZ(-2px);
+  border-radius: 2px;
+  box-shadow: 0 -2px 0 #222;
+  animation: keys infinite 7s ease; }
+
+.key.space {
+  width: 45px; }
+
+.key.f {
+  height: 3px; }
+
+.macbody .pad {
+  width: 5px;
+  height: 5px;
+  background: #FF2A00;
+  border-radius: 100%;
+  position: absolute; }
+
+.pad.one {
+  left: 20px;
+  top: 20px; }
+
+.pad.two {
+  right: 20px;
+  top: 20px; }
+
+.pad.three {
+  right: 20px;
+  bottom: 20px; }
+
+.pad.four {
+  left: 20px;
+  bottom: 20px; }
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg); }
+  5% {
+    transform: rotateX(-20deg) rotateY(-20deg) rotateZ(0deg); }
+  20% {
+    transform: rotateX(30deg) rotateY(200deg) rotateZ(0deg); }
+  25% {
+    transform: rotateX(-60deg) rotateY(150deg) rotateZ(0deg); }
+  60% {
+    transform: rotateX(-20deg) rotateY(130deg) rotateZ(0deg); }
+  65% {
+    transform: rotateX(-20deg) rotateY(120deg) rotateZ(0deg); }
+  80% {
+    transform: rotateX(-20deg) rotateY(375deg) rotateZ(0deg); }
+  85% {
+    transform: rotateX(-20deg) rotateY(357deg) rotateZ(0deg); }
+  87% {
+    transform: rotateX(-20deg) rotateY(360deg) rotateZ(0deg); }
+  100% {
+    transform: rotateX(-20deg) rotateY(360deg) rotateZ(0deg); } }
+
+@keyframes lid-screen {
+  0% {
+    transform: rotateX(0deg);
+    background-position: left bottom; }
+  5% {
+    transform: rotateX(50deg);
+    background-position: left bottom; }
+  20% {
+    transform: rotateX(-90deg);
+    background-position: -150px top; }
+  25% {
+    transform: rotateX(15deg);
+    background-position: left bottom; }
+  30% {
+    transform: rotateX(-5deg);
+    background-position: right top; }
+  38% {
+    transform: rotateX(5deg);
+    background-position: right top; }
+  48% {
+    transform: rotateX(0deg);
+    background-position: right top; }
+  90% {
+    transform: rotateX(0deg);
+    background-position: right top; }
+  100% {
+    transform: rotateX(0deg);
+    background-position: right center; } }
+
+@keyframes lid-macbody {
+  0% {
+    transform: rotateX(-90deg); }
+  50% {
+    transform: rotateX(-90deg); }
+  100% {
+    transform: rotateX(-90deg); } }
+
+@keyframes lid-keyboard-area {
+  0% {
+    background-color: #dfdfdf; }
+  50% {
+    background-color: #bbb; }
+  100% {
+    background-color: #dfdfdf; } }
+
+@keyframes screen-shade {
+  0% {
+    background-position: -20px 0px; }
+  5% {
+    background-position: -40px 0px; }
+  20% {
+    background-position: 200px 0; }
+  50% {
+    background-position: -200px 0; }
+  80% {
+    background-position: 0px 0px; }
+  85% {
+    background-position: -30px 0; }
+  90% {
+    background-position: -20px 0; }
+  100% {
+    background-position: -20px 0px; } }
+
+@keyframes keys {
+  0% {
+    box-shadow: 0 -2px 0 #222; }
+  5% {
+    box-shadow: 1 -1px 0 #222; }
+  20% {
+    box-shadow: -1px 1px 0 #222; }
+  25% {
+    box-shadow: -1px 1px 0 #222; }
+  60% {
+    box-shadow: -1px 1px 0 #222; }
+  80% {
+    box-shadow: 0 -2px 0 #222; }
+  85% {
+    box-shadow: 0 -2px 0 #222; }
+  87% {
+    box-shadow: 0 -2px 0 #222; }
+  100% {
+    box-shadow: 0 -2px 0 #222; } }
+
+@keyframes shadow {
+  0% {
+    transform: rotateX(80deg) rotateY(0deg) rotateZ(0deg);
+    box-shadow: 0 0 60px 40px rgba(0, 0, 0, 0.3); }
+  5% {
+    transform: rotateX(80deg) rotateY(10deg) rotateZ(0deg);
+    box-shadow: 0 0 60px 40px rgba(0, 0, 0, 0.3); }
+  20% {
+    transform: rotateX(30deg) rotateY(-20deg) rotateZ(-20deg);
+    box-shadow: 0 0 50px 30px rgba(0, 0, 0, 0.3); }
+  25% {
+    transform: rotateX(80deg) rotateY(-20deg) rotateZ(50deg);
+    box-shadow: 0 0 35px 15px rgba(0, 0, 0, 0.1); }
+  60% {
+    transform: rotateX(80deg) rotateY(0deg) rotateZ(-50deg) translateX(30px);
+    box-shadow: 0 0 60px 40px rgba(0, 0, 0, 0.3); }
+  100% {
+    box-shadow: 0 0 60px 40px rgba(0, 0, 0, 0.3); } }
+
+.boton-pack {
+  position: relative;
+  color: #FF2A00;
+  right: -40rem;
+  bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  border-radius: 0.6em;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  overflow: hidden !important;
+  border: 2px solid #FF2A00;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1%, transparent 40%, transparent 60%, rgba(255, 255, 255, 0.1) 100%);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.4), 0 0 9px 3px rgba(255, 255, 255, 0.1); }
+  .boton-pack:hover {
+    color: #FF2A00;
+    box-shadow: inset 0 0 5px #FF2A00, 0 0 9px 3px rgba(255, 255, 255, 0.2); }
+  .boton-pack:before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(255, 255, 255, 0.1) 40%, rgba(255, 255, 255, 0.1) 60%, transparent 100%); }
+  .boton-pack:hover:before {
+    transform: translateX(100%); }
+
+.fixed-back-button {
+  position: fixed;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  height: auto;
+  cursor: pointer; }
+
+.paquetes {
+  margin: 2rem 4rem; }
+  .paquetes .p-content {
+    margin-left: 4rem;
+    text-align: center; }
+    .paquetes .p-content:hover {
+      transform: scale(1.02); }
+    .paquetes .p-content div {
+      margin-bottom: 2rem; }
+      .paquetes .p-content div h3 {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: #FF2A00;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        margin-left: 6rem;
+        width: 100%;
+        text-align: left;
+        position: relative; }
+        .paquetes .p-content div h3::after {
+          content: '';
+          position: absolute;
+          top: 2.5;
+          left: 0;
+          right: 0;
+          bottom: -.5rem;
+          height: 1px;
+          width: 80%;
+          background-color: #FF2A00; }
+      .paquetes .p-content div p {
+        text-align: left;
+        width: 90%;
+        margin-left: 2rem; }
+
+.portada-design {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  .portada-design .img1 {
+    width: 60vw;
+    border-radius: 8px;
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: 2rem; }
+    .portada-design .img1:hover {
+      filter: drop-shadow(0 0 10px #FF2A00);
+      transform: scale(1.05);
+      transition: 300ms; }
+  .portada-design .container-phone-text {
+    margin-top: -9rem; }
+    .portada-design .container-phone-text .titulo-phone {
+      font-family: "Poppins", sans-serif;
+      font-size: 1rem;
+      text-align: center;
+      margin: 11rem 3rem auto 3rem;
+      animation: floating 2s ease-in-out infinite; }
+    .portada-design .container-phone-text .img2 {
+      width: 15vw;
+      height: 100%;
+      text-align: right;
+      margin-right: 3rem;
+      margin-left: 7rem;
+      animation: floating 2s ease-in-out infinite; }
+      .portada-design .container-phone-text .img2:hover {
+        filter: drop-shadow(0 0 10px #FF2A00);
+        transition: 300ms; }
+
+.img3-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.img3 {
+  width: 60%;
+  text-align: center;
+  margin: -1.5rem auto 2.5rem auto; }
+
+h2 {
+  font-family: "Bona Nova SC", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #FF2A00;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+  h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -.5rem;
+    height: 1px;
+    background-color: #FF2A00; }
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #FF2A00;
+  margin-top: 1rem; }
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: left;
+  margin: .5rem 0rem 1rem 0rem;
+  color: #FFFFFF; }
+
+.thanks1 {
+  font-family: "Bona Nova SC", serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #FF2A00;
+  font-weight: 300; }
+
+.thanks2 {
+  font-family: "Bona Nova SC", serif;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: normal;
+  color: #FF2A00;
+  font-weight: 300; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  color: #FF2A00;
+  text-align: center;
+  padding: 0;
+  z-index: 1;
+  background-image: url(../Assets/img/fondo-footer.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover; }
+  footer section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    position: relative;
+    z-index: 1;
+    max-width: 90rem;
+    margin: 0 auto; }
+  footer section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1; }
+  footer p {
+    font-family: "Bona Nova SC", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: -2.5rem;
+    margin-top: 2rem;
+    position: relative;
+    padding-bottom: 0.1rem; }
+    footer p::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #FF2A00;
+      z-index: -1; }
+  footer .iconos {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: -2rem; }
+    footer .iconos a {
+      margin-right: 0.2rem; }
+      footer .iconos a img {
+        display: flex;
+        align-items: flex-start;
+        width: 3rem;
+        height: auto; }
+  footer h4 {
+    font-family: "Bona Nova SC", serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: .5rem;
+    margin-bottom: 3rem;
+    font-size: 1rem; }
+
+/* MEDIA QUERY */

@@ -1,0 +1,90 @@
+@mixin flex ($direction, $wrap, $justify, $aling, $flex) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $aling;
+    flex: $flex;
+}
+@mixin grid ($columns, $rows, $gap, $padding) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    gap: $gap;
+    padding: $padding;
+}
+
+.information {
+    padding: 2rem;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Ajusta la cantidad de "flotación" */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 99;
+}
+body {
+    overflow-x: hidden;
+    /* BACKGROUND INDEX */
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    background-image: url(../assets/img/fondo.png);
+    }
+}
+
+.p-content {
+    background-color: $color-dark;
+    padding: 1rem;
+    border-radius: 2.5rem; 
+    margin: 3rem 3rem 3rem 3rem;
+    border: 5px groove $color-principal !important;
+    &:hover {
+        filter: drop-shadow(0 0 10px $color-principal);
+        transform: scale(1.05);
+        transition: 300ms;
+        }
+    
+    a { 
+        color: $color-principal;
+        text-decoration: underline;
+        
+    }
+
+    .highlight {
+        color: #FF5733; /* Cambia este color por el que desees */
+        font-family: $font-tres;
+        font-weight: $font-normal;
+        font-weight: 400; /* Puedes agregar otros estilos, si lo deseas */
+        }
+}

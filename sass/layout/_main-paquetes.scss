@@ -1,0 +1,55 @@
+.fixed-back-button {
+    position: fixed;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+.paquetes {
+    margin: 2rem 4rem;
+
+.p-content {
+    margin-left: 4rem;
+    text-align: center;
+    &:hover {
+        transform: scale(1.02);
+        }
+    
+    div {
+        margin-bottom: 2rem;
+        h3 {
+            font-family:$font-tres;
+            font-style: $font-normal;
+            font-weight: 300;
+            font-size: map-get($font-size, size2);
+            color: $color-principal;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            margin-left: 6rem;
+            width: 100%;
+            text-align: left;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 2.5;
+                left: 0;
+                right: 0;
+                bottom: -.5rem; 
+                height: 1px;
+                width: 80%;
+                background-color: $color-principal;
+            }
+        }
+        p {
+            text-align: left;
+            width: 90%;
+            margin-left: 2rem;
+        }
+    }  
+}
+}
+

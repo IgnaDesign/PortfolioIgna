@@ -1,0 +1,44 @@
+/* ENCABEZADO GENERAL*/
+/* BOOTSTRAP */
+.navbar-nav {
+    padding-left: 2rem;
+    font-size: map-get($font-size, size2);
+}
+.nav-link {
+    font-family:$font-uno;
+    font-style: $font-normal;
+    font-weight: 700;
+}
+.dropdown-menu-nosotros {
+    background-color: $color-principal;
+    text-align: center;
+    :hover {
+        filter: drop-shadow(0 0 10px $color-dark);
+        transform: scale(1.05);
+        transition: 300ms;
+    }
+.dropdown-item {
+    font-family:$font-dos;
+    font-style: $font-normal;
+    font-weight: 500;
+    font-size: map-get($font-size, size3);
+    }
+    .dropdown-divider {
+        border-color: $color-dark !important;
+    }
+}
+/* LOGO */
+.logo {
+    width: 200px;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    :hover {
+            filter: drop-shadow(0 0 10px $color-clear);
+            transform: scale(1.10);
+            transition: 100ms;
+            width: 150px;
+        }
+    }
