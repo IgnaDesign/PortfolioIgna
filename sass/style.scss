@@ -13,8 +13,12 @@
 @import "./layout/main-web";
 @import "./layout/main-paquetes";
 @import "./layout/main-graphicdesign";
+@import "./layout/main-freelancer";
 @import "./layout/footer";
 
 /* MEDIA QUERY */
-
-
+@import "./layout/media/media1024";
+@import "./layout/media/media768";
+@import "./layout/media/media576";
+@import "./layout/media/media360";
+@import "./layout/media/media320";

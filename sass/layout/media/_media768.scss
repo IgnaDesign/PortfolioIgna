@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+//ENCABEZADO
+.navbar-nav {
+    font-size: map-get($font-size, size3) !important;
+    gap: 0.2rem;
+    margin-top: 0.5rem;
+    margin-left: -2rem;
+
+    & .nav-link {
+        padding: 0 1rem;
+    }
+}
+
+.navbar-toggler {
+    padding: 0.2rem 0.2rem;
+    font-size: map-get($font-size, size4);
+    margin-left: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-size: contain;
+}
+
+.navbar-collapse {
+    @include flex (none,none,space-between,center,1); 
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin-left: .5rem !important;
+    border-color: $color-principal;
+} 
+
+.dropdown-item {
+    font-size: map-get($font-size, size5) !important;
+}
+
+.dropdown-divider {
+    border-color: $color-principal;
+    margin: 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+// INDEX
+.container-dos {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center;    /* Centra los elementos horizontalmente */
+}
+
+  /* Portada Section */
+.portada-section {
+    width: 80%; 
+}
+
+.portada-index img {
+    width: 80%;            /* Asegura que la imagen ocupe todo el ancho */
+    height: auto;
+    display: block;
+    margin: -3rem 5rem 1rem;
+}
+
+  /* Cards Section */
+.cards-section {
+    display: grid;
+    gap: 0.5rem;
+    width: 20% !important;
+    margin: 0;
+    padding: 0; 
+    grid-template-columns: repeat(4, 1fr) !important;
+
+}
+
+.e-card {
+    width: 150px !important; 
+    height: 220px !important;
+    
+    .icono-web {
+        width: 3rem !important;
+        margin-top: -1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    
+    .icono-design {
+        width: 5rem !important;
+        margin-top: -2.8rem;
+        padding-bottom: .5rem !important;
+    }
+}
+
+
+.infotop {
+    font-size: map-get($font-size, size4) !important;
+    a {
+        .texto {
+            font-size: map-get($font-size, size6) !important;
+        }
+        .texto-2 {
+            font-size: map-get($font-size, size6) !important;
+        }
+    }
+}
+
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los iconos horizontalmente */
+    gap: 1rem; /* Ajusta el espacio entre los iconos si es necesario */
+    width: 100% !important; /* Asegura que ocupe el 100% del ancho de la pantalla */
+    padding: 1rem; /* Añade padding si es necesario */
+    margin-left: 15rem !important;
+}
+
+.app-icon {
+    width: 3rem !important; /* Aumenta el tamaño del icono */
+    height: 3rem !important; /* Aumenta el tamaño del icono */
+    object-fit: cover !important; /* Asegura que la imagen se ajuste bien */
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    }
+}

@@ -14,6 +14,28 @@
     padding: $padding;
 }
 
+/* CONTENEDOR PRINCIPAL */
+.container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 99;
+}
+
+body {
+    overflow-x: hidden;
+    /* BACKGROUND INDEX */
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    background-image: url(../assets/img/fondo.png);
+    }
+}
+
 .information {
     padding: 2rem;
     position: relative;
@@ -41,26 +63,6 @@
         transform: translateY(0);
     }
 }
-}
-
-/* CONTENEDOR PRINCIPAL */
-.container {
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    z-index: 99;
-}
-body {
-    overflow-x: hidden;
-    /* BACKGROUND INDEX */
-#particles-js {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: -1;
-    background-image: url(../assets/img/fondo.png);
-    }
 }
 
 .p-content {

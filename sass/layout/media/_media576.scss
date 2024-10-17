@@ -1,0 +1,53 @@
+@media (max-width: 576px) {
+
+.navbar-nav {
+    font-size: map-get($font-size, size4) !important;
+    gap: 0.2rem;
+    margin-top: 0.5rem;
+    margin-left: -2rem;
+
+    & .nav-link {
+        padding: 0 1rem;
+    }
+}
+
+.navbar-toggler {
+    padding: 0.2rem 0.2rem;
+    font-size: map-get($font-size, size5);
+    margin-left: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    background-size: contain;
+}
+
+.navbar-collapse {
+    @include flex (none,none,space-between,center,1); 
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin-left: .5rem !important;
+    border-color: $color-principal;
+} 
+
+.dropdown-item {
+    font-size: map-get($font-size, size6) !important;
+}
+
+.dropdown-divider {
+    border-color: $color-principal;
+    margin: 0;
+}
+
+.logo {
+    width: 120px;
+}
+
+.navbar-brand {
+    position: absolute;
+    right: 1rem;
+    left: auto; 
+    transform: none; 
+}
+}

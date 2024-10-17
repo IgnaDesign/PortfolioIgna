@@ -1,0 +1,70 @@
+@media (max-width: 1024px) {
+// INDEX
+/* Ajustar la portada */
+.portada-index {
+    flex: 2; /* Hacerla más grande en relación a las tarjetas */
+    margin-top: 2rem;
+
+    img {
+        width: 100%; /* Hacer que la portada ocupe más espacio horizontal */
+        height: auto;
+    }
+}
+
+  /* Ajustar las tarjetas (e-cards) */
+.cards-section {
+    grid-template-columns: repeat(2, 1fr); /* Mantener dos tarjetas por fila */
+    grid-gap: 0.8rem; /* Reducir el espacio entre las tarjetas */
+}
+
+.e-card {
+    width: 180px !important; /* Hacer las e-cards más pequeñas */
+    height: 250px !important;
+}
+
+  /* Ajustar los iconos de aplicaciones */
+.app-icon {
+    width: 2.6rem !important; /* Reducir el tamaño de los iconos */
+    height: auto;
+    margin-top: -10rem !important; /* Mantenerlos por debajo de la portada */
+}
+
+.app-container {
+    justify-content: center; /* Centrar los iconos bajo la portada */
+    margin-left: 0; /* Asegurarse de que estén bien alineados */
+    }
+
+// WEB DEVELOPMEN
+
+.container-portada {
+    .portada-web {
+        max-width: 50%; /* Incrementa el tamaño de la portada */
+        margin-left: -20rem ;
+    }
+}
+
+.container-mac {
+    margin-right: -35rem; /* Aleja la Mac del borde derecho */
+    margin-top: 10rem;
+}
+
+.icons-container {
+    right: 4rem; /* Aleja los íconos del borde derecho */
+    margin-top: 1rem;
+}
+
+.icon img {
+    width: 3rem; /* Ajusta el tamaño de las imágenes según sea necesario */
+}
+
+.boton-pack {
+    right: -20rem;
+}
+
+// GRAPHIC DESIGN 
+.container-phone-text {
+    .img2 {
+      margin-left: 5rem !important; /* Asegúrate de que los márgenes de la imagen no cambien para mantener el diseño */
+    }
+} 
+}
