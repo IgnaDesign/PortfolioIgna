@@ -9,36 +9,33 @@
 main {
     background-size: cover;
     display: flex;
-    flex-direction: column; /* Cambiado a columna para manejar la imagen final en el flujo del documento */
+    flex-direction: column;
     align-items: center;
-    height: auto; /* Ajusta la altura según el contenido */
+    height: auto;
 
     /* Contenedor para la portada y las tarjetas */
     .container-dos {
         display: flex;
-        justify-content: space-between; /* Espacia la portada y las tarjetas */
-        align-items: flex-start; /* Alinea al principio */
+        justify-content: space-between;
+        align-items: flex-start;
         width: 100%;
-        max-width: 90%; /* Limita el ancho máximo del contenedor */
-        padding: 20px; /* Espacio alrededor del contenido */
-        margin-bottom: 20px; /* Espacio debajo del contenedor de portada y tarjetas */
+        max-width: 90%;
+        margin-bottom: 1rem;
     }
 
     .content {
         display: flex;
         justify-content: flex-start;
-        align-items: flex-start; /* Alinea verticalmente al principio */
+        align-items: flex-start;
         flex-grow: 1;
-        margin-right: 20px; /* Espacio entre la portada y las tarjetas */
     }
 
     .portada-index {
         flex: 1;
-        margin-top: 3rem;
+        margin-top: 7rem;
         img {
             width: 90%;
             height: auto;
-            display: block;
         &:hover {
             filter: drop-shadow(0 0 10px $color-principal);
             transform: scale(1.05);
@@ -49,17 +46,17 @@ main {
     .cards-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem; /* Espacio entre las tarjetas */
+        grid-gap: 1rem;
         width: 100%;
         max-width: 100%;
-        margin-top: 1rem;
+        margin-top: 6rem;
     }
     /* ENLACES A PAGINA - WEB DEVELOPMEN & GRAPHIC DESIGN */
     .e-card {
         display: flex;
-        flex-direction: column; /* Alinea el contenido verticalmente */
-        align-items: center; /* Centra el contenido horizontalmente */
-        justify-content: center; /* Centra el contenido verticalmente */
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
         background: transparent;
         box-shadow: 0px 8px 28px -9px $color-principal;
         position: relative;
@@ -69,6 +66,7 @@ main {
         overflow: hidden;
         font-size: map-get($font-size, size4);
         text-align: center;
+        
         .wave {
             position: absolute;
             width: 540px;
@@ -94,21 +92,23 @@ main {
         }
         .icono-web {
             width: 3.5rem;
-            margin-top: -1em;
-            padding-bottom: 1.5rem;
+            margin-top: -2rem;
+            padding-bottom: 5.5rem;
+            transform: translateX(3rem);
             &:hover {
                 filter: drop-shadow(0 0 10px $color-clear);
-                transform: scale(1.10);
+                transform: translateX(3rem) scale(1.10);
                 transition: 300ms;
             }
         }
         .icono-design {
             width: 6.5rem;
-            margin-top: -2.8rem;
-            padding-bottom: .1rem;
+            margin-top: -4rem;
+            padding-bottom: 4.5rem;
+            transform: translateX(1.5rem);
             &:hover {
                 filter: drop-shadow(0 0 10px $color-clear);
-                transform: scale(1.10);
+                transform: translateX(1.5rem) scale(1.10);
                 transition: 300ms;
             }
         }
@@ -131,18 +131,26 @@ main {
                     font-size: map-get($font-size, size5);
                     font-weight: $font-normal;
                     position: relative;
-                    top: 1em;
-                    margin: .2rem .8rem;
                     text-transform: lowercase;
+                    margin: -2rem 1rem;
                 }
                 .texto-2 {
                     font-family: $font-uno;
                     font-size: map-get($font-size, size5);
                     font-weight: $font-normal;
                     position: relative;
-                    top: 1em;
-                    margin: .2rem .5rem;
                     text-transform: lowercase;
+                    margin: -2rem 2rem;
+                }
+
+                .custom-span-dos {          
+                    text-align: center;  
+                    margin-left: -4rem;
+                }
+
+                .custom-span {              
+                    text-align: center;  
+                    margin-left: -6rem;
                 }
             }
         }
@@ -170,22 +178,22 @@ main {
     .app-container {
         width: 100%;
         display: flex;
-        flex-wrap: wrap; /* Permite que las imágenes se ajusten en múltiples filas si es necesario */
-        gap: 1rem; /* Espacio entre las imágenes */
-        justify-content: left; /* Centra las imágenes horizontalmente */
-        margin: 1rem 0; /* Espacio alrededor del contenedor */
+        flex-wrap: wrap;
+        gap: 1rem; 
+        justify-content: left;
+        margin: 2rem 0;
         margin-left: 9rem;
     }
     
     .app {
         display: flex;
-        flex-wrap: wrap; /* Permite que las imágenes se ajusten si hay muchas */
-        justify-content: center; /* Centra las imágenes dentro del contenedor */
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .app-icon {
-        width: 3.5rem; /* Ajusta el ancho según tus necesidades */
-        height: auto; /* Mantiene la proporción de la imagen */
+        width: 3.5rem;
+        height: auto;
         margin: 0.15rem;
         margin-top: -6rem;
         &:hover {

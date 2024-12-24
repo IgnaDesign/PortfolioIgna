@@ -31,15 +31,15 @@
 .video-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 1rem; // Espacio entre los videos
     padding: 2rem;
     margin-top: -3rem;
-    margin-bottom: -18rem;
+    margin-bottom: 1rem;
 
     .video-item {
         flex: 1 1 calc(50% - 1rem); // Hace que cada video ocupe el 50% del ancho menos el espacio del gap
-        max-width: 48%; // Ajuste adicional para evitar que los videos sean demasiado grandes
+        max-width: 45%; // Ajuste adicional para evitar que los videos sean demasiado grandes
         video {
             width: 100%;
             height: auto;

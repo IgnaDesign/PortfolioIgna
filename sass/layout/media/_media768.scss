@@ -1,5 +1,10 @@
 @media (max-width: 768px) {
-//ENCABEZADO
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .navbar-nav {
     font-size: map-get($font-size, size3) !important;
     gap: 0.2rem;
@@ -27,7 +32,7 @@
 
 .dropdown-menu {
     padding: 0;
-    margin-left: .5rem !important;
+    margin-left: 0.5rem !important;
     border-color: $color-principal;
 } 
 
@@ -41,54 +46,62 @@
 }
 
 .logo {
-    width: 150px;
+    width: 120px !important;
 }
 
 // INDEX
 .container-dos {
-    width: 100%;
-    display: flex;
-    flex-direction: column; /* Coloca los elementos en columna */
-    align-items: center;    /* Centra los elementos horizontalmente */
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column; 
+
 }
 
   /* Portada Section */
 .portada-section {
-    width: 80%; 
-}
-
-.portada-index img {
-    width: 80%;            /* Asegura que la imagen ocupe todo el ancho */
-    height: auto;
-    display: block;
-    margin: -3rem 5rem 1rem;
+    width: 80% !important;
+    margin-left: 6rem !important;
+    margin-bottom: 3rem;
+    margin-top: -1.5rem;
 }
 
   /* Cards Section */
 .cards-section {
     display: grid;
-    gap: 0.5rem;
-    width: 20% !important;
-    margin: 0;
+    row-gap: 0.2rem;
+    column-gap: 5px;
+    width: 100%;
+    margin: 0rem 8.5rem !important;
+    margin-bottom: 8rem !important;
     padding: 0; 
-    grid-template-columns: repeat(4, 1fr) !important;
-
+    grid-template-columns: 30% 30% !important;
 }
 
 .e-card {
-    width: 150px !important; 
-    height: 220px !important;
+    width: auto;
+    height: 200px !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     
     .icono-web {
         width: 3rem !important;
-        margin-top: -1.5rem !important;
-        padding-bottom: 1.5rem !important;
+        margin-top: -2.5rem !important;
+        padding-bottom: 5rem !important;
+        transform: translateX(2.8rem) !important;
+        &:hover {
+            transform: translateX(2.8rem) scale(1.10) !important
+        }
     }
     
     .icono-design {
         width: 5rem !important;
-        margin-top: -2.8rem;
-        padding-bottom: .5rem !important;
+        margin-top: -3rem;
+        padding-bottom: 4rem !important;
+        transform: translateX(1.1rem) !important;
+        &:hover {
+            transform: translateX(1rem) scale(1.10) !important
+        }
     }
 }
 
@@ -98,9 +111,22 @@
     a {
         .texto {
             font-size: map-get($font-size, size6) !important;
+            margin: -0.5rem 1rem 0.5rem 1rem !important;
         }
+
         .texto-2 {
             font-size: map-get($font-size, size6) !important;
+            margin: -1rem 1rem 1rem 1rem !important;
+        }
+
+        .custom-span-dos {          
+            margin-left: -3rem !important;
+            font-size: map-get($font-size, size5) !important;
+        }
+
+        .custom-span {            
+            font-size: map-get($font-size, size5) !important;  
+            margin-left: -5rem !important;
         }
     }
 }
@@ -112,7 +138,9 @@
     gap: 1rem; /* Ajusta el espacio entre los iconos si es necesario */
     width: 100% !important; /* Asegura que ocupe el 100% del ancho de la pantalla */
     padding: 1rem; /* Añade padding si es necesario */
-    margin-left: 15rem !important;
+    margin-top: -5rem !important;
+    margin-bottom: 18rem !important;
+    margin-left: 12rem !important;
 }
 
 .app-icon {
@@ -121,5 +149,110 @@
     object-fit: cover !important; /* Asegura que la imagen se ajuste bien */
     margin-top: 0 !important;
     margin-bottom: 1rem !important;
+    }
+
+// WEB DEVELOPMEN
+
+.container-portada {
+    .portada-web {
+        max-width: 50%; /* Incrementa el tamaño de la portada */
+        margin-left: -18rem ;
+        margin-top: 3rem;
+    }
+}
+
+.container-mac {
+    margin-right: -25rem; /* Aleja la Mac del borde derecho */
+    margin-top: 10rem !important;
+}
+
+.icons-container {
+    right: 3rem !important; 
+    margin-top: -5rem;
+    margin-bottom: 2rem;
+}
+
+.icon img {
+    width: 2.5rem; /* Ajusta el tamaño de las imágenes según sea necesario */
+}
+
+.work {
+    margin-top: -1rem;
+    margin-bottom: 10rem !important;
+}
+
+    .p-content {
+    padding: 10px; /* Ajusta el espaciado dentro de cada bloque */
+    }
+
+h2 {
+    font-size: map-get($font-size, size2);
+    }
+
+    p {
+        font-size: map-get($font-size, size3);
+    }
+
+.work h2.work-2 {
+    font-size: map-get($font-size, size2); /* Reduce el tamaño de los títulos principales */
+    margin-bottom: 10px; /* Ajusta el espaciado inferior */
+    }
+
+.work h3 {
+    font-size: map-get($font-size, size9);
+    margin-bottom: 8px;
+    }
+
+    .work p, .work a {
+    font-size: map-get($font-size, size4);
+    line-height: 1.4; /* Ajusta la altura de línea para mejor legibilidad */
+    }
+
+    .work a.boton-pack {
+        font-size: map-get($font-size, size6);
+    }
+
+    .thanks1, .thanks2 {
+        font-size: map-get($font-size, size3);
+    }
+
+    .img3 {
+        width: 70%;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+
+// GRAPHIC DESIGN
+.portada-design {
+    margin-bottom: 2rem !important;
+}
+
+.img1 {
+    margin-top: 1rem !important;
+}
+
+.container-phone-text {
+    margin-top: -7rem !important;
+    margin-left: -1rem;
+.titulo-phone{
+    font-size: map-get($font-size, size5) !important;
+    margin: 11rem 2rem auto 3rem !important;
+    }
+}
+    
+// FREELANCER 2d/3d
+.container-portada {
+    margin-top: -18rem !important;
+}
+
+.video-gallery {
+    margin-top: -20rem !important;
+    }
+
+footer {
+    margin-top: 5rem !important;
+        position: fixed;
+        background-image: url(../Assets/img/footer-768.png);
     }
 }

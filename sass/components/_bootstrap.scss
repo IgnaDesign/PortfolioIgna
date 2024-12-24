@@ -1,4 +1,16 @@
 /* ENCABEZADO GENERAL*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegúrate de que el encabezado esté encima de todo */
+    background-color: $color-principal; /* Color de fondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para destacar el encabezado */
+}
 /* BOOTSTRAP */
 .navbar-nav {
     padding-left: 2rem;
@@ -42,4 +54,3 @@
             width: 150px;
         }
     }
-    

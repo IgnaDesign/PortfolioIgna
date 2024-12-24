@@ -1,60 +1,76 @@
 @media (max-width: 1024px) {
-// INDEX
-/* Ajustar la portada */
-.portada-index {
-    flex: 2; /* Hacerla más grande en relación a las tarjetas */
-    margin-top: 2rem;
+    .container-dos {
+        max-width: 80%;
+    }
+    .portada-index {
+        img {
+            width: 70%;
+            height: auto;
+        }
+    }
 
-    img {
-        width: 100%; /* Hacer que la portada ocupe más espacio horizontal */
-        height: auto;
+.e-card {
+    width: 180px !important;
+    height: 250px !important;
+    margin: 0.2rem;
+
+    .icono-web {
+        width: 3rem !important;
+        margin-top: -2rem;
+        padding-bottom: 5.5rem;
+        transform: translateX(3.5rem) !important;
+    }
+    .icono-design {
+        width: 6rem;
+        margin-top: -4rem;
+        padding-bottom: 4.5rem;
+        transform: translateX(1rem) !important;
     }
 }
 
-  /* Ajustar las tarjetas (e-cards) */
-.cards-section {
-    grid-template-columns: repeat(2, 1fr); /* Mantener dos tarjetas por fila */
-    grid-gap: 0.8rem; /* Reducir el espacio entre las tarjetas */
+.custom-span-dos {           
+    margin-left: -3rem !important ;
+}
+.custom-span {              
+    text-align: center;  
+    margin-left: -7rem !important;
 }
 
-.e-card {
-    width: 180px !important; /* Hacer las e-cards más pequeñas */
-    height: 250px !important;
-}
-
-  /* Ajustar los iconos de aplicaciones */
 .app-icon {
-    width: 2.6rem !important; /* Reducir el tamaño de los iconos */
+    width: 2.6rem !important;
     height: auto;
-    margin-top: -10rem !important; /* Mantenerlos por debajo de la portada */
+    margin-top: -9rem !important;
+    margin-bottom: 2rem;
 }
 
 .app-container {
-    justify-content: center; /* Centrar los iconos bajo la portada */
-    margin-left: 0; /* Asegurarse de que estén bien alineados */
+    justify-content: center;
+    margin-left: 8rem !important;
     }
 
 // WEB DEVELOPMEN
 
 .container-portada {
     .portada-web {
-        max-width: 50%; /* Incrementa el tamaño de la portada */
+        max-width: 45%;
         margin-left: -20rem ;
+        margin-top: 14rem;
+        margin-bottom: 2rem !important;
     }
 }
 
 .container-mac {
-    margin-right: -35rem; /* Aleja la Mac del borde derecho */
-    margin-top: 10rem;
+    margin-right: -35rem;
+    margin-top: 15rem !important;
 }
 
 .icons-container {
-    right: 4rem; /* Aleja los íconos del borde derecho */
+    right: 4rem;
     margin-top: 1rem;
 }
 
 .icon img {
-    width: 3rem; /* Ajusta el tamaño de las imágenes según sea necesario */
+    width: 3rem;
 }
 
 .boton-pack {
@@ -62,9 +78,26 @@
 }
 
 // GRAPHIC DESIGN 
+.img1 {
+    margin-top: 5rem !important;
+}
+
 .container-phone-text {
+    margin-top: -5rem !important;
     .img2 {
-      margin-left: 5rem !important; /* Asegúrate de que los márgenes de la imagen no cambien para mantener el diseño */
+        margin-left: 5rem !important;
     }
 } 
+
+// FREELANCER 2d/3d
+.container-portada {
+    margin-top: -2rem !important;
+}
+
+.video-gallery {
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: -7rem !important;
+    margin-bottom: 0.5rem;
+        }
 }

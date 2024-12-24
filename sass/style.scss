@@ -1,9 +1,9 @@
-/* BASE */
-@import "./base/resets";
-
 /* UTILITIES */
 @import "./utilities/variables";
 @import "./utilities/mixing";
+
+/* BASE */
+@import "./base/resets";
 
 /* COMPONENTS*/
 @import "./components/bootstrap";
@@ -20,5 +20,6 @@
 @import "./layout/media/media1024";
 @import "./layout/media/media768";
 @import "./layout/media/media576";
+@import "./layout/media/media426";
 @import "./layout/media/media360";
 @import "./layout/media/media320";

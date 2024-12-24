@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/* BASE */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
 /* UTILITIES */
 /* PALETA DE COLORES */
 /* TIPOGRAFIAS */
@@ -18,14 +12,15 @@
   z-index: 99; }
 
 body {
-  overflow-x: hidden;
-  /* BACKGROUND INDEX */ }
-  body #particles-js {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: -1;
-    background-image: url(../assets/img/fondo.png); }
+  overflow-x: hidden; }
+
+/* BACKGROUND INDEX */
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background-image: url(../assets/img/fondo.png); }
 
 .information {
   padding: 2rem;
@@ -70,8 +65,29 @@ body {
     font-weight: 400;
     /* Puedes agregar otros estilos, si lo deseas */ }
 
+/* BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 /* COMPONENTS*/
 /* ENCABEZADO GENERAL*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Asegúrate de que el encabezado esté encima de todo */
+  background-color: #FF2A00;
+  /* Color de fondo */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra opcional para destacar el encabezado */ }
+
 /* BOOTSTRAP */
 .navbar-nav {
   padding-left: 2rem;
@@ -124,40 +140,28 @@ main {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  /* Cambiado a columna para manejar la imagen final en el flujo del documento */
   align-items: center;
   height: auto;
-  /* Ajusta la altura según el contenido */
   /* Contenedor para la portada y las tarjetas */
   /* ENLACES A PAGINA - WEB DEVELOPMEN & GRAPHIC DESIGN */ }
   main .container-dos {
     display: flex;
     justify-content: space-between;
-    /* Espacia la portada y las tarjetas */
     align-items: flex-start;
-    /* Alinea al principio */
     width: 100%;
     max-width: 90%;
-    /* Limita el ancho máximo del contenedor */
-    padding: 20px;
-    /* Espacio alrededor del contenido */
-    margin-bottom: 20px;
-    /* Espacio debajo del contenedor de portada y tarjetas */ }
+    margin-bottom: 1rem; }
   main .content {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    /* Alinea verticalmente al principio */
-    flex-grow: 1;
-    margin-right: 20px;
-    /* Espacio entre la portada y las tarjetas */ }
+    flex-grow: 1; }
   main .portada-index {
     flex: 1;
-    margin-top: 3rem; }
+    margin-top: 7rem; }
     main .portada-index img {
       width: 90%;
-      height: auto;
-      display: block; }
+      height: auto; }
       main .portada-index img:hover {
         filter: drop-shadow(0 0 10px #FF2A00);
         transform: scale(1.05);
@@ -166,18 +170,14 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    /* Espacio entre las tarjetas */
     width: 100%;
     max-width: 100%;
-    margin-top: 1rem; }
+    margin-top: 6rem; }
   main .e-card {
     display: flex;
     flex-direction: column;
-    /* Alinea el contenido verticalmente */
     align-items: center;
-    /* Centra el contenido horizontalmente */
     justify-content: center;
-    /* Centra el contenido verticalmente */
     background: transparent;
     box-shadow: 0px 8px 28px -9px #FF2A00;
     position: relative;
@@ -207,19 +207,21 @@ main {
         animation-duration: 45s; }
     main .e-card .icono-web {
       width: 3.5rem;
-      margin-top: -1em;
-      padding-bottom: 1.5rem; }
+      margin-top: -2rem;
+      padding-bottom: 5.5rem;
+      transform: translateX(3rem); }
       main .e-card .icono-web:hover {
         filter: drop-shadow(0 0 10px #FFFFFF);
-        transform: scale(1.1);
+        transform: translateX(3rem) scale(1.1);
         transition: 300ms; }
     main .e-card .icono-design {
       width: 6.5rem;
-      margin-top: -2.8rem;
-      padding-bottom: .1rem; }
+      margin-top: -4rem;
+      padding-bottom: 4.5rem;
+      transform: translateX(1.5rem); }
       main .e-card .icono-design:hover {
         filter: drop-shadow(0 0 10px #FFFFFF);
-        transform: scale(1.1);
+        transform: translateX(1.5rem) scale(1.1);
         transition: 300ms; }
     main .e-card .infotop {
       text-align: center;
@@ -240,17 +242,21 @@ main {
           font-size: 0.8rem;
           font-weight: normal;
           position: relative;
-          top: 1em;
-          margin: .2rem .8rem;
-          text-transform: lowercase; }
+          text-transform: lowercase;
+          margin: -2rem 1rem; }
         main .e-card .infotop a .texto-2 {
           font-family: "Bona Nova SC", serif;
           font-size: 0.8rem;
           font-weight: normal;
           position: relative;
-          top: 1em;
-          margin: .2rem .5rem;
-          text-transform: lowercase; }
+          text-transform: lowercase;
+          margin: -2rem 2rem; }
+        main .e-card .infotop a .custom-span-dos {
+          text-align: center;
+          margin-left: -4rem; }
+        main .e-card .infotop a .custom-span {
+          text-align: center;
+          margin-left: -6rem; }
     main .e-card.playing .wave {
       animation: wave 3000ms infinite linear; }
     main .e-card.playing .wave:nth-child(2) {
@@ -267,25 +273,17 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* Permite que las imágenes se ajusten en múltiples filas si es necesario */
     gap: 1rem;
-    /* Espacio entre las imágenes */
     justify-content: left;
-    /* Centra las imágenes horizontalmente */
-    margin: 1rem 0;
-    /* Espacio alrededor del contenedor */
+    margin: 2rem 0;
     margin-left: 9rem; }
   main .app {
     display: flex;
     flex-wrap: wrap;
-    /* Permite que las imágenes se ajusten si hay muchas */
-    justify-content: center;
-    /* Centra las imágenes dentro del contenedor */ }
+    justify-content: center; }
   main .app-icon {
     width: 3.5rem;
-    /* Ajusta el ancho según tus necesidades */
     height: auto;
-    /* Mantiene la proporción de la imagen */
     margin: 0.15rem;
     margin-top: -6rem; }
     main .app-icon:hover {
@@ -892,14 +890,14 @@ p {
 .video-gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   gap: 1rem;
   padding: 2rem;
   margin-top: -3rem;
-  margin-bottom: -18rem; }
+  margin-bottom: 1rem; }
   .video-gallery .video-item {
     flex: 1 1 calc(50% - 1rem);
-    max-width: 48%; }
+    max-width: 45%; }
     .video-gallery .video-item video {
       width: 100%;
       height: auto;
@@ -980,59 +978,72 @@ footer {
 
 /* MEDIA QUERY */
 @media (max-width: 1024px) {
-  /* Ajustar la portada */
-  .portada-index {
-    flex: 2;
-    /* Hacerla más grande en relación a las tarjetas */
-    margin-top: 2rem; }
-    .portada-index img {
-      width: 100%;
-      /* Hacer que la portada ocupe más espacio horizontal */
-      height: auto; }
-  /* Ajustar las tarjetas (e-cards) */
-  .cards-section {
-    grid-template-columns: repeat(2, 1fr);
-    /* Mantener dos tarjetas por fila */
-    grid-gap: 0.8rem;
-    /* Reducir el espacio entre las tarjetas */ }
+  .container-dos {
+    max-width: 80%; }
+  .portada-index img {
+    width: 70%;
+    height: auto; }
   .e-card {
     width: 180px !important;
-    /* Hacer las e-cards más pequeñas */
-    height: 250px !important; }
-  /* Ajustar los iconos de aplicaciones */
+    height: 250px !important;
+    margin: 0.2rem; }
+    .e-card .icono-web {
+      width: 3rem !important;
+      margin-top: -2rem;
+      padding-bottom: 5.5rem;
+      transform: translateX(3.5rem) !important; }
+    .e-card .icono-design {
+      width: 6rem;
+      margin-top: -4rem;
+      padding-bottom: 4.5rem;
+      transform: translateX(1rem) !important; }
+  .custom-span-dos {
+    margin-left: -3rem !important; }
+  .custom-span {
+    text-align: center;
+    margin-left: -7rem !important; }
   .app-icon {
     width: 2.6rem !important;
-    /* Reducir el tamaño de los iconos */
     height: auto;
-    margin-top: -10rem !important;
-    /* Mantenerlos por debajo de la portada */ }
+    margin-top: -9rem !important;
+    margin-bottom: 2rem; }
   .app-container {
     justify-content: center;
-    /* Centrar los iconos bajo la portada */
-    margin-left: 0;
-    /* Asegurarse de que estén bien alineados */ }
+    margin-left: 8rem !important; }
   .container-portada .portada-web {
-    max-width: 50%;
-    /* Incrementa el tamaño de la portada */
-    margin-left: -20rem; }
+    max-width: 45%;
+    margin-left: -20rem;
+    margin-top: 14rem;
+    margin-bottom: 2rem !important; }
   .container-mac {
     margin-right: -35rem;
-    /* Aleja la Mac del borde derecho */
-    margin-top: 10rem; }
+    margin-top: 15rem !important; }
   .icons-container {
     right: 4rem;
-    /* Aleja los íconos del borde derecho */
     margin-top: 1rem; }
   .icon img {
-    width: 3rem;
-    /* Ajusta el tamaño de las imágenes según sea necesario */ }
+    width: 3rem; }
   .boton-pack {
     right: -20rem; }
-  .container-phone-text .img2 {
-    margin-left: 5rem !important;
-    /* Asegúrate de que los márgenes de la imagen no cambien para mantener el diseño */ } }
+  .img1 {
+    margin-top: 5rem !important; }
+  .container-phone-text {
+    margin-top: -5rem !important; }
+    .container-phone-text .img2 {
+      margin-left: 5rem !important; }
+  .container-portada {
+    margin-top: -2rem !important; }
+  .video-gallery {
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: -7rem !important;
+    margin-bottom: 0.5rem; } }
 
 @media (max-width: 768px) {
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
   .navbar-nav {
     font-size: 1rem !important;
     gap: 0.2rem;
@@ -1055,7 +1066,7 @@ footer {
     flex: 1; }
   .dropdown-menu {
     padding: 0;
-    margin-left: .5rem !important;
+    margin-left: 0.5rem !important;
     border-color: #FF2A00; }
   .dropdown-item {
     font-size: 0.8rem !important; }
@@ -1063,48 +1074,61 @@ footer {
     border-color: #FF2A00;
     margin: 0; }
   .logo {
-    width: 150px; }
+    width: 120px !important; }
   .container-dos {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* Coloca los elementos en columna */
-    align-items: center;
-    /* Centra los elementos horizontalmente */ }
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column; }
   /* Portada Section */
   .portada-section {
-    width: 80%; }
-  .portada-index img {
-    width: 80%;
-    /* Asegura que la imagen ocupe todo el ancho */
-    height: auto;
-    display: block;
-    margin: -3rem 5rem 1rem; }
+    width: 80% !important;
+    margin-left: 6rem !important;
+    margin-bottom: 3rem;
+    margin-top: -1.5rem; }
   /* Cards Section */
   .cards-section {
     display: grid;
-    gap: 0.5rem;
-    width: 20% !important;
+    row-gap: 0.2rem;
+    column-gap: 5px;
+    width: 100%;
+    margin: 0rem 8.5rem !important;
+    margin-bottom: 8rem !important;
+    padding: 0;
+    grid-template-columns: 30% 30% !important; }
+  .e-card {
+    width: auto;
+    height: 200px !important;
     margin: 0;
     padding: 0;
-    grid-template-columns: repeat(4, 1fr) !important; }
-  .e-card {
-    width: 150px !important;
-    height: 220px !important; }
+    box-sizing: border-box; }
     .e-card .icono-web {
       width: 3rem !important;
-      margin-top: -1.5rem !important;
-      padding-bottom: 1.5rem !important; }
+      margin-top: -2.5rem !important;
+      padding-bottom: 5rem !important;
+      transform: translateX(2.8rem) !important; }
+      .e-card .icono-web:hover {
+        transform: translateX(2.8rem) scale(1.1) !important; }
     .e-card .icono-design {
       width: 5rem !important;
-      margin-top: -2.8rem;
-      padding-bottom: .5rem !important; }
+      margin-top: -3rem;
+      padding-bottom: 4rem !important;
+      transform: translateX(1.1rem) !important; }
+      .e-card .icono-design:hover {
+        transform: translateX(1rem) scale(1.1) !important; }
   .infotop {
     font-size: 0.9rem !important; }
     .infotop a .texto {
-      font-size: 0.7rem !important; }
+      font-size: 0.7rem !important;
+      margin: -0.5rem 1rem 0.5rem 1rem !important; }
     .infotop a .texto-2 {
-      font-size: 0.7rem !important; }
+      font-size: 0.7rem !important;
+      margin: -1rem 1rem 1rem 1rem !important; }
+    .infotop a .custom-span-dos {
+      margin-left: -3rem !important;
+      font-size: 0.8rem !important; }
+    .infotop a .custom-span {
+      font-size: 0.8rem !important;
+      margin-left: -5rem !important; }
   .app-container {
     display: flex;
     flex-wrap: wrap;
@@ -1116,7 +1140,9 @@ footer {
     /* Asegura que ocupe el 100% del ancho de la pantalla */
     padding: 1rem;
     /* Añade padding si es necesario */
-    margin-left: 15rem !important; }
+    margin-top: -5rem !important;
+    margin-bottom: 18rem !important;
+    margin-left: 12rem !important; }
   .app-icon {
     width: 3rem !important;
     /* Aumenta el tamaño del icono */
@@ -1125,7 +1151,71 @@ footer {
     object-fit: cover !important;
     /* Asegura que la imagen se ajuste bien */
     margin-top: 0 !important;
-    margin-bottom: 1rem !important; } }
+    margin-bottom: 1rem !important; }
+  .container-portada .portada-web {
+    max-width: 50%;
+    /* Incrementa el tamaño de la portada */
+    margin-left: -18rem;
+    margin-top: 3rem; }
+  .container-mac {
+    margin-right: -25rem;
+    /* Aleja la Mac del borde derecho */
+    margin-top: 10rem !important; }
+  .icons-container {
+    right: 3rem !important;
+    margin-top: -5rem;
+    margin-bottom: 2rem; }
+  .icon img {
+    width: 2.5rem;
+    /* Ajusta el tamaño de las imágenes según sea necesario */ }
+  .work {
+    margin-top: -1rem;
+    margin-bottom: 10rem !important; }
+  .p-content {
+    padding: 10px;
+    /* Ajusta el espaciado dentro de cada bloque */ }
+  h2 {
+    font-size: 1.5rem; }
+  p {
+    font-size: 1rem; }
+  .work h2.work-2 {
+    font-size: 1.5rem;
+    /* Reduce el tamaño de los títulos principales */
+    margin-bottom: 10px;
+    /* Ajusta el espaciado inferior */ }
+  .work h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px; }
+  .work p, .work a {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    /* Ajusta la altura de línea para mejor legibilidad */ }
+  .work a.boton-pack {
+    font-size: 0.7rem; }
+  .thanks1, .thanks2 {
+    font-size: 1rem; }
+  .img3 {
+    width: 70%;
+    text-align: center;
+    margin: 1rem auto; }
+  .portada-design {
+    margin-bottom: 2rem !important; }
+  .img1 {
+    margin-top: 1rem !important; }
+  .container-phone-text {
+    margin-top: -7rem !important;
+    margin-left: -1rem; }
+    .container-phone-text .titulo-phone {
+      font-size: 0.8rem !important;
+      margin: 11rem 2rem auto 3rem !important; }
+  .container-portada {
+    margin-top: -18rem !important; }
+  .video-gallery {
+    margin-top: -20rem !important; }
+  footer {
+    margin-top: 5rem !important;
+    position: fixed;
+    background-image: url(../Assets/img/footer-768.png); } }
 
 @media (max-width: 576px) {
   .navbar-nav {
@@ -1158,16 +1248,290 @@ footer {
     border-color: #FF2A00;
     margin: 0; }
   .logo {
-    width: 120px; }
-  .navbar-brand {
-    position: absolute;
-    right: 1rem;
-    left: auto;
-    transform: none; } }
+    width: 110px; }
+  /* Portada Section */
+  .portada-section {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .portada-index img {
+    width: 100% !important;
+    /* Asegura que la imagen ocupe todo el ancho */
+    height: auto;
+    display: block;
+    margin: 0rem 2rem 1rem -2.5rem !important; }
+  /* Cards Section */
+  .cards-section {
+    grid-template-columns: 35% 35% !important;
+    margin: 0rem 4.2rem -20rem !important; }
+  .app-container {
+    margin-left: 6rem !important; }
+  .app-icon {
+    width: 2.5rem !important;
+    /* Aumenta el tamaño del icono */
+    height: 2.5rem !important;
+    /* Aumenta el tamaño del icono */
+    margin-top: 28rem !important;
+    margin-bottom: 1rem !important; }
+  .container-portada {
+    margin-bottom: -15rem; }
+    .container-portada .portada-web {
+      max-width: 60%;
+      /* Incrementa el tamaño de la portada */
+      margin-left: -9rem;
+      margin-top: 6rem;
+      margin-bottom: 1rem; }
+  .work {
+    margin-top: 0.5rem !important;
+    margin-bottom: 6rem !important; }
+  .p-content {
+    margin: 0 2rem 3rem 3rem;
+    border: 2px groove #FF2A00 !important; }
+  .container-mac {
+    margin-right: -20rem;
+    /* Aleja la Mac del borde derecho */
+    margin-top: 9rem; }
+    .container-mac .macbook {
+      transform: scale(0.65);
+      /* Reduce al 60% del tamaño original */
+      transform-origin: top right;
+      /* Ajusta el punto de origen del escalado */ }
+  .icons-container {
+    right: 1rem !important;
+    /* Aleja los íconos del borde derecho */
+    top: 8rem;
+    bottom: 0.5rem; }
+  .icon img {
+    width: 2.2rem;
+    /* Ajusta el tamaño de las imágenes según sea necesario */
+    gap: 5px; }
+  h2 {
+    font-size: 1.2rem !important; }
+  p {
+    font-size: 0.9rem !important; }
+  .boton-pack {
+    top: -1rem;
+    right: -9rem;
+    bottom: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.7em 2.7em;
+    border: 2px solid #FF2A00; }
+  .work h2.work-2 {
+    font-size: 1rem;
+    /* Reduce el tamaño de los títulos principales */
+    margin-bottom: 15px;
+    /* Ajusta el espaciado inferior */ }
+  .work h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px; }
+  .portada-design {
+    display: flex;
+    flex-direction: column;
+    /* Cambiamos a una disposición en columna */
+    justify-content: center;
+    align-items: center;
+    /* Centramos los elementos */
+    width: 100%;
+    margin-top: 2rem !important; }
+    .portada-design .img1 {
+      width: 80vw;
+      border-radius: 8px;
+      margin: 2rem auto;
+      /* Centramos la imagen horizontalmente */ }
+  .container-phone-text {
+    margin-top: -9rem !important;
+    margin-bottom: 1rem;
+    text-align: center; }
+    .container-phone-text .titulo-phone {
+      margin-bottom: 1rem !important;
+      font-size: 1rem !important; }
+  .img2 {
+    width: 30vw !important;
+    height: 100%; }
+  .img3 {
+    width: 80%;
+    text-align: center;
+    margin: 0.5rem auto 5rem auto; }
+  .work {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem; }
+  .container-portada {
+    margin-top: -20rem !important; }
+  .video-gallery {
+    justify-content: center;
+    margin-top: -9rem !important; }
+    .video-gallery .video-item {
+      flex: 1 1 calc(90% - 1rem) !important;
+      max-width: 90% !important; }
+  footer {
+    background-image: url(../Assets/img/footer-576.png); }
+    footer p {
+      font-size: 1rem; }
+    footer .iconos {
+      margin-top: 1rem; }
+      footer .iconos img {
+        width: 2.5rem !important; }
+    footer h4 {
+      font-size: 0.8rem; } }
+
+@media (max-width: 426px) {
+  .navbar-nav {
+    font-size: 1rem !important; }
+  .navbar-toggler {
+    font-size: 0.9rem; }
+  .dropdown-item {
+    font-size: 0.8rem !important; }
+  .logo {
+    width: 100px; }
+  .portada-index img {
+    margin: 0rem 1rem 1rem -3.5rem !important; }
+  .cards-section {
+    width: 100% !important;
+    margin-top: 1rem !important;
+    margin-bottom: 20rem !important;
+    margin-left: 0rem !important;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    justify-content: center;
+    align-items: center; }
+    .cards-section .e-card {
+      width: 80% !important;
+      height: 150px !important;
+      margin: 0 auto; }
+      .cards-section .e-card .icono-web {
+        grid-column: 1;
+        justify-self: start;
+        margin-left: -1rem;
+        margin-top: -2rem !important;
+        margin-bottom: 2rem !important; }
+      .cards-section .e-card .icono-design {
+        grid-column: 1;
+        justify-self: start;
+        margin-left: -0.5rem;
+        margin-top: -3.5rem !important;
+        margin-bottom: 2rem !important; }
+      .cards-section .e-card .infotop a {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        gap: 1rem; }
+        .cards-section .e-card .infotop a .custom-span-dos {
+          grid-column: 2;
+          text-align: center;
+          margin-top: -9rem !important;
+          margin-right: -4rem !important;
+          font-size: 1rem !important; }
+        .cards-section .e-card .infotop a .custom-span {
+          grid-column: 2;
+          text-align: center;
+          margin-top: -10rem !important;
+          margin-right: -3rem !important;
+          margin-left: -0.5rem;
+          font-size: 1rem !important; }
+        .cards-section .e-card .infotop a .texto {
+          grid-column: 2;
+          text-align: center;
+          margin: -12rem 2rem 0rem -0.5rem !important;
+          font-size: 0.9rem !important; }
+        .cards-section .e-card .infotop a .texto-2 {
+          grid-column: 2;
+          text-align: center;
+          margin: -12rem 2rem 0rem -0.5rem !important;
+          font-size: 0.9rem !important; }
+  .app-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0.5rem !important;
+    /* Espacio alrededor */
+    margin-top: -18rem !important;
+    margin-right: 5.5rem !important; }
+  .app {
+    display: grid !important;
+    /* Cambiar a un diseño de grid */
+    grid-template-columns: repeat(5, 1fr) !important;
+    /* 5 íconos por fila */
+    grid-template-rows: repeat(2, auto) !important;
+    /* Crea 2 filas */
+    align-items: center !important;
+    /* Centrar íconos verticalmente */
+    column-gap: 1rem !important; }
+  .app-icon {
+    margin: 0.5rem 0 !important;
+    width: 3rem !important;
+    /* Aumenta el tamaño del icono */
+    height: 3rem !important;
+    /* Aumenta el tamaño del icono */ }
+  .container-portada .portada-web {
+    max-width: 80%;
+    /* Incrementa el tamaño de la portada */
+    display: flex;
+    /* Activa flexbox */
+    justify-content: center !important;
+    /* Centra horizontalmente */
+    align-items: center !important;
+    /* Centra verticalmente si es necesario */
+    text-align: center !important;
+    margin: 7rem auto 4rem auto !important; }
+  .container-mac {
+    display: flex;
+    /* Activa flexbox */
+    justify-content: center !important;
+    /* Centra horizontalmente */
+    align-items: center !important;
+    /* Centra verticalmente si es necesario */
+    text-align: center !important;
+    margin: 35rem auto 3rem auto !important; }
+    .container-mac .macbook {
+      transform: scale(1.2) !important;
+      /* Aumenta el tamaño al 120% */
+      transform-origin: center;
+      /* Escala desde el centro */ }
+  .icons-container {
+    display: flex;
+    /* Activa flexbox */
+    justify-content: center !important;
+    /* Centra horizontalmente */
+    align-items: center !important;
+    /* Centra verticalmente si es necesario */
+    text-align: center !important;
+    margin: 4rem -1rem 2rem 4rem !important; }
+  .icon img {
+    width: 4rem;
+    /* Ajusta el tamaño de las imágenes según sea necesario */
+    gap: 5px; }
+  .work {
+    margin-top: 30rem !important; }
+  h2 {
+    font-size: 1rem !important; }
+  p {
+    font-size: 0.8rem !important; }
+  .boton-pack {
+    top: -0.5rem;
+    right: -3rem;
+    bottom: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.7em 2.7em;
+    border: 2px solid #FF2A00; }
+  .img2 {
+    width: 50vw !important;
+    height: 100%; }
+  .img3 {
+    width: 100%; }
+  .work {
+    margin-top: -0.5rem !important;
+    margin-bottom: 1rem; }
+  .container-portada {
+    margin-top: -23rem !important; }
+  .video-gallery {
+    margin-top: -11rem !important; }
+  footer {
+    background-image: url(../Assets/img/footer-425.png); } }
 
 @media (max-width: 360px) {
   .logo {
-    width: 100px; } }
+    width: 100px;
+    margin-left: 2rem; } }
 
 @media (max-width: 360px) {
   .logo {

@@ -1,0 +1,205 @@
+@media (max-width: 426px) {
+    .navbar-nav {
+        font-size: map-get($font-size, size3) !important;
+    }
+    
+    .navbar-toggler {
+        font-size: map-get($font-size, size4);
+    }
+    
+    .dropdown-item {
+        font-size: map-get($font-size, size5) !important;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .portada-index img {
+        margin: 0rem 1rem 1rem -3.5rem !important;
+    }
+
+    .cards-section {
+        width: 100% !important;
+        margin-top: 1rem !important;
+        margin-bottom: 20rem !important;
+        margin-left: 0rem !important;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        justify-content: center;
+        align-items: center;
+    
+    .e-card {
+        width: 80% !important;
+        height: 150px !important;
+        margin: 0 auto;
+
+        .icono-web {
+            grid-column: 1;                 
+            justify-self: start;            
+            margin-left: -1rem;
+            margin-top: -2rem !important;
+            margin-bottom: 2rem !important;
+        }
+
+        .icono-design {
+            grid-column: 1;               
+            justify-self: start;           
+            margin-left: -0.5rem;
+            margin-top: -3.5rem !important;
+            margin-bottom: 2rem !important;
+        }
+    
+        .infotop a {
+            display: grid;                 
+            grid-template-columns: auto 1fr;
+            align-items: center;            
+            gap: 1rem;
+
+            .custom-span-dos {
+                grid-column: 2;                
+                text-align: center;  
+                margin-top: -9rem !important; 
+                margin-right: -4rem !important;
+                font-size: map-get($font-size, size3) !important;
+            }
+
+            .custom-span {
+                grid-column: 2;                
+                text-align: center;  
+                margin-top: -10rem !important; 
+                margin-right: -3rem !important;
+                margin-left: -0.5rem;
+                font-size: map-get($font-size, size3) !important;
+            }
+
+                .texto {
+                    grid-column: 2;                
+                    text-align: center;               
+                    margin: -12rem 2rem 0rem -0.5rem !important;    
+                    font-size: map-get($font-size, size4) !important;
+                }
+                
+                .texto-2 {
+                    grid-column: 2;                
+                    text-align: center;               
+                    margin: -12rem 2rem 0rem -0.5rem !important;    
+                    font-size: map-get($font-size, size4) !important;  
+                }
+
+                
+            }
+        }
+    }
+
+    .app-container {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0.5rem !important; /* Espacio alrededor */
+        margin-top: -18rem !important;
+        margin-right: 5.5rem !important;
+    }
+
+    .app {
+        display: grid !important; /* Cambiar a un diseño de grid */
+        grid-template-columns: repeat(5, 1fr) !important; /* 5 íconos por fila */
+        grid-template-rows: repeat(2, auto) !important; /* Crea 2 filas */
+        align-items: center !important; /* Centrar íconos verticalmente */
+        column-gap: 1rem !important;
+    }
+
+    .app-icon {
+        margin: 0.5rem 0 !important ;
+        width: 3rem !important; /* Aumenta el tamaño del icono */
+        height: 3rem !important; /* Aumenta el tamaño del icono */
+        }
+
+        // WEB DEVELOPMEN
+.container-portada {
+    .portada-web {
+        max-width: 80%; /* Incrementa el tamaño de la portada */
+        display: flex; /* Activa flexbox */
+        justify-content: center !important; /* Centra horizontalmente */
+        align-items: center !important; /* Centra verticalmente si es necesario */
+        text-align: center !important;
+        margin: 7rem auto 4rem auto !important;
+    }
+}
+
+.container-mac {
+    display: flex; /* Activa flexbox */
+    justify-content: center !important; /* Centra horizontalmente */
+    align-items: center !important; /* Centra verticalmente si es necesario */
+    text-align: center !important;
+    margin: 35rem auto 3rem auto !important;
+    .macbook {
+        transform: scale(1.2) !important; /* Aumenta el tamaño al 120% */
+        transform-origin: center; /* Escala desde el centro */
+    }
+}
+
+.icons-container {
+    display: flex; /* Activa flexbox */
+    justify-content: center !important; /* Centra horizontalmente */
+    align-items: center !important; /* Centra verticalmente si es necesario */
+    text-align: center !important;
+    margin: 4rem -1rem 2rem 4rem !important;
+}
+
+.icon img {
+    width: 4rem; /* Ajusta el tamaño de las imágenes según sea necesario */
+    gap: 5px;
+}
+
+.work {
+    margin-top: 30rem !important;
+}
+
+h2 {
+    font-size: map-get($font-size, size3) !important;
+    }
+
+    p {
+        font-size: map-get($font-size, size5) !important;
+    }
+
+    .boton-pack {
+        top: -0.5rem;
+        right: -3rem;
+        bottom: 0.5rem;
+        font-size: map-get($font-size, size5);
+        padding: 0.7em 2.7em;
+        border: 2px solid  $color-principal;
+    }
+
+    // Graphic Design
+    .img2 {
+        width: 50vw !important;
+        height: 100%;
+    }
+
+    .img3 {
+        width: 100%;
+    }
+
+    .work {
+        margin-top: -0.5rem !important;
+        margin-bottom: 1rem;
+    }
+
+    // FREELANCER 2d/3d
+.container-portada {
+    margin-top: -23rem !important;
+}
+
+.video-gallery {
+    margin-top: -11rem !important;
+    }
+
+footer {
+    background-image: url(../Assets/img/footer-425.png);
+}
+}
+
+
