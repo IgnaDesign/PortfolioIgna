@@ -10,7 +10,7 @@
         border-radius: 8px;
         text-align: left;
         margin-left: 2rem;
-        margin-top: 2rem;
+        margin-top: 6rem;
         &:hover {
             filter: drop-shadow(0 0 10px $color-principal);
             transform: scale(1.05);
@@ -19,7 +19,7 @@
         }
 
     .container-phone-text {
-        margin-top: -9rem;
+        margin-top: -5rem;
     .titulo-phone{
         font-family: $font-tres;
         font-size: map-get($font-size, size3);

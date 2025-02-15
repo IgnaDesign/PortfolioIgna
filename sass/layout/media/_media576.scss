@@ -76,12 +76,10 @@
 
 // WEB DEVELOPMEN
 .container-portada {
-    margin-bottom: -15rem ;
     .portada-web {
-        max-width: 60%; /* Incrementa el tamaño de la portada */
-        margin-left: -9rem ;
-        margin-top: 6rem;
-        margin-bottom: 1rem;
+        max-width: 50%; /* Incrementa el tamaño de la portada */
+        margin-left: -12rem ;
+        margin-top: 2rem;
     }
 }
 
@@ -96,8 +94,9 @@
 }
 
 .container-mac {
-    margin-right: -20rem; /* Aleja la Mac del borde derecho */
-    margin-top: 9rem;
+    margin-right: -18rem; /* Aleja la Mac del borde derecho */
+    margin-top: 10rem !important;
+    margin-bottom: 0rem;
     .macbook {
         transform: scale(0.65); /* Reduce al 60% del tamaño original */
         transform-origin: top right; /* Ajusta el punto de origen del escalado */
@@ -105,9 +104,8 @@
 }
 
 .icons-container {
-    right: 1rem !important; /* Aleja los íconos del borde derecho */
-    top: 8rem;
-    bottom: 0.5rem;
+    right: 1.5rem !important; 
+    margin-bottom: 7rem;
 }
 
 .icon img {
@@ -123,25 +121,25 @@ h2 {
         font-size: map-get($font-size, size4) !important;
     }
 
-.boton-pack {
-    top: -1rem;
-    right: -9rem;
-    bottom: 0.5rem;
-    font-size: map-get($font-size, size5);
-    padding: 0.7em 2.7em;
-    border: 2px solid  $color-principal;
-}
-
-.work h2.work-2 {
-    font-size: map-get($font-size, size3); /* Reduce el tamaño de los títulos principales */
-    margin-bottom: 15px; /* Ajusta el espaciado inferior */
+    .boton-pack {
+        top: -1rem;
+        right: -9rem;
+        bottom: 0.5rem;
+        font-size: map-get($font-size, size5);
+        padding: 0.7em 2.7em;
+        border: 2px solid  $color-principal;
     }
-
-.work h3 {
-        font-size: map-get($font-size, size9);
-        margin-bottom: 10px;
+    
+    .work h2.work-2 {
+        font-size: map-get($font-size, size3); /* Reduce el tamaño de los títulos principales */
+        margin-bottom: 15px; /* Ajusta el espaciado inferior */
         }
-
+    
+    .work h3 {
+            font-size: map-get($font-size, size9);
+            margin-bottom: 10px;
+            }
+    
 // GRAPHIC DESIGN
         .portada-design {
             display: flex;
@@ -167,53 +165,53 @@ h2 {
         }
     }
 
-        .img2 {
-            width: 30vw !important;
-            height: 100%;
-        }
+    .img2 {
+        width: 30vw !important;
+        height: 100%;
+    }
 
-        .img3 {
-            width: 80%;
-            text-align: center;
-            margin: 0.5rem auto 5rem auto;
-        }
+    .img3 {
+        width: 80%;
+        text-align: center;
+        margin: 0.5rem auto 5rem auto;
+    }
 
-        .work {
-            margin-top: 1rem !important;
-            margin-bottom: 1rem;
-        }
+    .work {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
 
 // FREELANCER 2d/3d
 .container-portada {
-    margin-top: -20rem !important;
+margin-top: -5rem !important;
 }
 
 .video-gallery {
-    justify-content: center;
-    margin-top: -9rem !important;
+justify-content: center;
+margin-top: -9rem !important;
 
-    .video-item {
-        flex: 1 1 calc(90% - 1rem) !important;
-        max-width: 90% !important;
-        } 
-    }
+.video-item {
+    flex: 1 1 calc(90% - 1rem) !important;
+    max-width: 90% !important;
+    } 
+}
 
 footer {
-    background-image: url(../Assets/img/footer-576.png);
+background-image: url(../Assets/img/footer-576.png);
 
-    p {
-        font-size: map-get($font-size, size3);
-    }
+p {
+    font-size: map-get($font-size, size3);
+}
 
-    .iconos {
-        margin-top: 1rem;
-            img {
-                width: 2.5rem !important;
-                }
+.iconos {
+    margin-top: 1rem;
+        img {
+            width: 2.5rem !important;
             }
-
-    h4 {
-        font-size: map-get($font-size, size5);
         }
+
+h4 {
+    font-size: map-get($font-size, size5);
     }
+}
 }

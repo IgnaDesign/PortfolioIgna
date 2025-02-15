@@ -8,6 +8,8 @@
     .portada-web {
         max-width: 40%; /* Limita el ancho de la portada al 40% de la pantalla */
         height: auto;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
         
         img {
             width: 100%; /* La imagen ocupará todo el ancho del contenedor */
@@ -25,11 +27,15 @@
     }
 }
 
+.workk {
+    margin-top: 5rem;
+}
+
 
 .container-mac {
     position: absolute;
     margin-right: -50rem; /* Alinea el contenedor al lado derecho de la pantalla */
-    margin-top: 8rem; /* Centra verticalmente */
+    margin-top: 15rem; /* Centra verticalmente */
     z-index: 1; /* Asegura que la Mac esté por encima de otros elementos, si es necesario */
     animation: floating 2s ease-in-out infinite;
 }
@@ -491,6 +497,7 @@
     box-shadow: 0 0 60px 40px rgba(0, 0, 0, 0.3);
     }
 }
+
     .boton-pack {
         position: relative;
         color: $color-principal;

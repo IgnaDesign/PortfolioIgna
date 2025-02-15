@@ -139,7 +139,7 @@
     width: 100% !important; /* Asegura que ocupe el 100% del ancho de la pantalla */
     padding: 1rem; /* Añade padding si es necesario */
     margin-top: -5rem !important;
-    margin-bottom: 18rem !important;
+    margin-bottom: 2rem !important;
     margin-left: 12rem !important;
 }
 
@@ -152,23 +152,26 @@
     }
 
 // WEB DEVELOPMEN
-
 .container-portada {
     .portada-web {
         max-width: 50%; /* Incrementa el tamaño de la portada */
-        margin-left: -18rem ;
-        margin-top: 3rem;
+        margin-top: 4rem;
+        transform-origin: left;
     }
 }
 
 .container-mac {
-    margin-right: -25rem; /* Aleja la Mac del borde derecho */
-    margin-top: 10rem !important;
+    margin-top: 12rem !important;
+    margin-right: -25rem;
+    .macbook {
+        transform: scale(0.85); /* Reduce al 60% del tamaño original */
+        transform-origin: top right; /* Ajusta el punto de origen del escalado */
+    }
 }
 
 .icons-container {
     right: 3rem !important; 
-    margin-top: -5rem;
+    margin-top: -30rem !important;
     margin-bottom: 2rem;
 }
 
@@ -176,53 +179,53 @@
     width: 2.5rem; /* Ajusta el tamaño de las imágenes según sea necesario */
 }
 
-.work {
-    margin-top: -1rem;
-    margin-bottom: 10rem !important;
+.workk {
+    margin-top: 1rem;
+    margin-bottom: 2rem !important;
 }
 
     .p-content {
     padding: 10px; /* Ajusta el espaciado dentro de cada bloque */
     }
 
-h2 {
-    font-size: map-get($font-size, size2);
-    }
-
-    p {
-        font-size: map-get($font-size, size3);
-    }
-
-.work h2.work-2 {
+    h2 {
+        font-size: map-get($font-size, size2);
+        }
+    
+        p {
+            font-size: map-get($font-size, size3);
+        }
+        
+.workk h2.work-2 {
     font-size: map-get($font-size, size2); /* Reduce el tamaño de los títulos principales */
     margin-bottom: 10px; /* Ajusta el espaciado inferior */
     }
 
-.work h3 {
-    font-size: map-get($font-size, size9);
-    margin-bottom: 8px;
-    }
+    .workk h3 {
+        font-size: map-get($font-size, size9);
+        margin-bottom: 8px;
+        }
+    
+        .workk p, .workk a {
+        font-size: map-get($font-size, size4);
+        line-height: 1.4; /* Ajusta la altura de línea para mejor legibilidad */
+        }
 
-    .work p, .work a {
-    font-size: map-get($font-size, size4);
-    line-height: 1.4; /* Ajusta la altura de línea para mejor legibilidad */
-    }
-
-    .work a.boton-pack {
-        font-size: map-get($font-size, size6);
-    }
-
-    .thanks1, .thanks2 {
-        font-size: map-get($font-size, size3);
-    }
-
-    .img3 {
-        width: 70%;
-        text-align: center;
-        margin: 1rem auto;
-    }
-
-
+        .workk a.boton-pack {
+            font-size: map-get($font-size, size6);
+        }
+    
+        .thanks1, .thanks2 {
+            font-size: map-get($font-size, size3);
+        }
+    
+        .img3 {
+            width: 70%;
+            text-align: center;
+            margin: 1rem auto;
+        }
+    
+        
 // GRAPHIC DESIGN
 .portada-design {
     margin-bottom: 2rem !important;
@@ -242,17 +245,11 @@ h2 {
 }
     
 // FREELANCER 2d/3d
-.container-portada {
-    margin-top: -18rem !important;
-}
-
 .video-gallery {
-    margin-top: -20rem !important;
+    margin-top: -5rem !important;
     }
 
 footer {
-    margin-top: 5rem !important;
-        position: fixed;
         background-image: url(../Assets/img/footer-768.png);
     }
 }

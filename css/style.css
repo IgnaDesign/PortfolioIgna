@@ -305,7 +305,9 @@ main {
   .container-portada .portada-web {
     max-width: 40%;
     /* Limita el ancho de la portada al 40% de la pantalla */
-    height: auto; }
+    height: auto;
+    margin-top: 4rem;
+    margin-bottom: 3rem; }
     .container-portada .portada-web img {
       width: 100%;
       /* La imagen ocupará todo el ancho del contenedor */
@@ -321,11 +323,14 @@ main {
         transform: scale(1.05);
         transition: 300ms; }
 
+.workk {
+  margin-top: 5rem; }
+
 .container-mac {
   position: absolute;
   margin-right: -50rem;
   /* Alinea el contenedor al lado derecho de la pantalla */
-  margin-top: 8rem;
+  margin-top: 15rem;
   /* Centra verticalmente */
   z-index: 1;
   /* Asegura que la Mac esté por encima de otros elementos, si es necesario */
@@ -774,13 +779,13 @@ main {
     border-radius: 8px;
     text-align: left;
     margin-left: 2rem;
-    margin-top: 2rem; }
+    margin-top: 6rem; }
     .portada-design .img1:hover {
       filter: drop-shadow(0 0 10px #FF2A00);
       transform: scale(1.05);
       transition: 300ms; }
   .portada-design .container-phone-text {
-    margin-top: -9rem; }
+    margin-top: -5rem; }
     .portada-design .container-phone-text .titulo-phone {
       font-family: "Poppins", sans-serif;
       font-size: 1rem;
@@ -872,7 +877,7 @@ p {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-top: -3rem; }
+  margin-top: 3rem; }
   .container-portada .portada-freelancer {
     width: 80%;
     max-width: 800px;
@@ -1013,8 +1018,8 @@ footer {
   .container-portada .portada-web {
     max-width: 45%;
     margin-left: -20rem;
-    margin-top: 14rem;
-    margin-bottom: 2rem !important; }
+    margin-top: 6rem;
+    margin-bottom: 1.5rem !important; }
   .container-mac {
     margin-right: -35rem;
     margin-top: 15rem !important; }
@@ -1025,6 +1030,8 @@ footer {
     width: 3rem; }
   .boton-pack {
     right: -20rem; }
+  .workk {
+    margin-top: 1rem; }
   .img1 {
     margin-top: 5rem !important; }
   .container-phone-text {
@@ -1141,7 +1148,7 @@ footer {
     padding: 1rem;
     /* Añade padding si es necesario */
     margin-top: -5rem !important;
-    margin-bottom: 18rem !important;
+    margin-bottom: 2rem !important;
     margin-left: 12rem !important; }
   .app-icon {
     width: 3rem !important;
@@ -1155,22 +1162,26 @@ footer {
   .container-portada .portada-web {
     max-width: 50%;
     /* Incrementa el tamaño de la portada */
-    margin-left: -18rem;
-    margin-top: 3rem; }
+    margin-top: 4rem;
+    transform-origin: left; }
   .container-mac {
-    margin-right: -25rem;
-    /* Aleja la Mac del borde derecho */
-    margin-top: 10rem !important; }
+    margin-top: 12rem !important;
+    margin-right: -25rem; }
+    .container-mac .macbook {
+      transform: scale(0.85);
+      /* Reduce al 60% del tamaño original */
+      transform-origin: top right;
+      /* Ajusta el punto de origen del escalado */ }
   .icons-container {
     right: 3rem !important;
-    margin-top: -5rem;
+    margin-top: -30rem !important;
     margin-bottom: 2rem; }
   .icon img {
     width: 2.5rem;
     /* Ajusta el tamaño de las imágenes según sea necesario */ }
-  .work {
-    margin-top: -1rem;
-    margin-bottom: 10rem !important; }
+  .workk {
+    margin-top: 1rem;
+    margin-bottom: 2rem !important; }
   .p-content {
     padding: 10px;
     /* Ajusta el espaciado dentro de cada bloque */ }
@@ -1178,19 +1189,19 @@ footer {
     font-size: 1.5rem; }
   p {
     font-size: 1rem; }
-  .work h2.work-2 {
+  .workk h2.work-2 {
     font-size: 1.5rem;
     /* Reduce el tamaño de los títulos principales */
     margin-bottom: 10px;
     /* Ajusta el espaciado inferior */ }
-  .work h3 {
+  .workk h3 {
     font-size: 1.2rem;
     margin-bottom: 8px; }
-  .work p, .work a {
+  .workk p, .workk a {
     font-size: 0.9rem;
     line-height: 1.4;
     /* Ajusta la altura de línea para mejor legibilidad */ }
-  .work a.boton-pack {
+  .workk a.boton-pack {
     font-size: 0.7rem; }
   .thanks1, .thanks2 {
     font-size: 1rem; }
@@ -1208,13 +1219,9 @@ footer {
     .container-phone-text .titulo-phone {
       font-size: 0.8rem !important;
       margin: 11rem 2rem auto 3rem !important; }
-  .container-portada {
-    margin-top: -18rem !important; }
   .video-gallery {
-    margin-top: -20rem !important; }
+    margin-top: -5rem !important; }
   footer {
-    margin-top: 5rem !important;
-    position: fixed;
     background-image: url(../Assets/img/footer-768.png); } }
 
 @media (max-width: 576px) {
@@ -1273,14 +1280,11 @@ footer {
     /* Aumenta el tamaño del icono */
     margin-top: 28rem !important;
     margin-bottom: 1rem !important; }
-  .container-portada {
-    margin-bottom: -15rem; }
-    .container-portada .portada-web {
-      max-width: 60%;
-      /* Incrementa el tamaño de la portada */
-      margin-left: -9rem;
-      margin-top: 6rem;
-      margin-bottom: 1rem; }
+  .container-portada .portada-web {
+    max-width: 50%;
+    /* Incrementa el tamaño de la portada */
+    margin-left: -12rem;
+    margin-top: 2rem; }
   .work {
     margin-top: 0.5rem !important;
     margin-bottom: 6rem !important; }
@@ -1288,19 +1292,18 @@ footer {
     margin: 0 2rem 3rem 3rem;
     border: 2px groove #FF2A00 !important; }
   .container-mac {
-    margin-right: -20rem;
+    margin-right: -18rem;
     /* Aleja la Mac del borde derecho */
-    margin-top: 9rem; }
+    margin-top: 10rem !important;
+    margin-bottom: 0rem; }
     .container-mac .macbook {
       transform: scale(0.65);
       /* Reduce al 60% del tamaño original */
       transform-origin: top right;
       /* Ajusta el punto de origen del escalado */ }
   .icons-container {
-    right: 1rem !important;
-    /* Aleja los íconos del borde derecho */
-    top: 8rem;
-    bottom: 0.5rem; }
+    right: 1.5rem !important;
+    margin-bottom: 7rem; }
   .icon img {
     width: 2.2rem;
     /* Ajusta el tamaño de las imágenes según sea necesario */
@@ -1354,9 +1357,9 @@ footer {
     margin: 0.5rem auto 5rem auto; }
   .work {
     margin-top: 1rem !important;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem !important; }
   .container-portada {
-    margin-top: -20rem !important; }
+    margin-top: -5rem !important; }
   .video-gallery {
     justify-content: center;
     margin-top: -9rem !important; }
@@ -1472,7 +1475,7 @@ footer {
     align-items: center !important;
     /* Centra verticalmente si es necesario */
     text-align: center !important;
-    margin: 7rem auto 4rem auto !important; }
+    margin: 13rem auto 4rem auto !important; }
   .container-mac {
     display: flex;
     /* Activa flexbox */
@@ -1500,7 +1503,7 @@ footer {
     width: 4rem;
     /* Ajusta el tamaño de las imágenes según sea necesario */
     gap: 5px; }
-  .work {
+  .workk {
     margin-top: 30rem !important; }
   h2 {
     font-size: 1rem !important; }
@@ -1521,17 +1524,14 @@ footer {
   .work {
     margin-top: -0.5rem !important;
     margin-bottom: 1rem; }
+  .thanks1, .thanks2 {
+    font-size: 0.9rem !important; }
   .container-portada {
-    margin-top: -23rem !important; }
+    margin-top: -7rem !important; }
   .video-gallery {
     margin-top: -11rem !important; }
   footer {
     background-image: url(../Assets/img/footer-425.png); } }
-
-@media (max-width: 360px) {
-  .logo {
-    width: 100px;
-    margin-left: 2rem; } }
 
 @media (max-width: 360px) {
   .logo {
