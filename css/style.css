@@ -76,7 +76,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -118,16 +118,10 @@ body {
   width: 200px; }
 
 .navbar-brand {
-  display: flex;
-  align-items: center;
-  /* Asegura que el logo también se centre verticalmente */
-  justify-content: center;
-  /* Centra horizontalmente dentro del navbar */
-  width: 100%;
-  /* O asegúrate de que ocupe suficiente espacio */
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  pointer-events: none; }
   .navbar-brand :hover {
     filter: drop-shadow(0 0 10px #FFFFFF);
     transform: scale(1.1);
