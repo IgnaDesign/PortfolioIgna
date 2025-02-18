@@ -196,6 +196,19 @@ margin-top: -9rem !important;
     } 
 }
 
+    //PAQUETES
+    .paquetes {
+        .p-content {
+        div {
+            h3 {
+                    &::after {
+                        width: 79%;
+                    }
+            }  }
+        }
+        }
+
+        //footer
 footer {
 background-image: url(../Assets/img/footer-576.png);
 

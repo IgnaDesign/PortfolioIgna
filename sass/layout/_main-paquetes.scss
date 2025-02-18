@@ -12,6 +12,7 @@
     margin: 2rem 4rem;
 
 .p-content {
+    margin-top: 7rem;
     margin-left: 4rem;
     text-align: center;
     &:hover {
@@ -40,7 +41,7 @@
                 right: 0;
                 bottom: -.5rem; 
                 height: 1px;
-                width: 80%;
+                width: 90%;
                 background-color: $color-principal;
             }
         }

@@ -104,4 +104,16 @@
     margin-top: -7rem !important;
     margin-bottom: 0.5rem;
         }
+
+//PAQUETES
+.paquetes {
+.p-content {
+div {
+        h3 {
+            &::after {
+                width: 89%;
+            }
+    }  }
+}
+}
 }

@@ -1,2 +1,67 @@
 @media (max-width: 360px) {
+
+        .navbar-nav {
+            font-size: map-get($font-size, size4) !important;
+        }
+        
+        .navbar-toggler {
+            font-size: map-get($font-size, size5);
+        }
+        
+        .dropdown-item {
+            font-size: map-get($font-size, size6) !important;
+        }
+
+        .cards-section {
+        .e-card {
+            width: 100% !important;
+        }
+    }
+
+    // WEB DEVELOPMEN
+.container-portada {
+    .portada-web {
+        max-width: 80%; /* Incrementa el tamaño de la portada */
+        margin: 8rem auto 3rem auto !important;
+    }
+}
+
+.workk {
+    margin-top: 32rem !important;
+    margin-left: 0.5;
+    margin-right: 0.5px;
+}
+
+.boton-pack {
+    font-size: map-get($font-size, size7) !important;
+}
+
+//GRAPHIC DESIGN 
+.p-content {
+    margin-bottom: 4rem;
+}
+
+    h2 {
+        font-size: map-get($font-size, size2) !important;
+    }
+
+    h3 {
+        font-size: map-get($font-size, size2) !important;
+    }
+
+// PAquetes
+.paquetes {
+    margin-top: -2rem !important;
+}
+
+    .fixed-back-button {
+        left: 0rem;
+        top: 45%;
+        width: 60px;
+    }
+
+    //Footer
+    h4 {
+        font-size: map-get($font-size, size4) !important;
+        }
 }

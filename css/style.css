@@ -76,7 +76,7 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -118,6 +118,13 @@ body {
   width: 200px; }
 
 .navbar-brand {
+  display: flex;
+  align-items: center;
+  /* Asegura que el logo también se centre verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente dentro del navbar */
+  width: 100%;
+  /* O asegúrate de que ocupe suficiente espacio */
   position: absolute;
   left: 50%;
   transform: translateX(-50%); }
@@ -735,6 +742,7 @@ main {
 .paquetes {
   margin: 2rem 4rem; }
   .paquetes .p-content {
+    margin-top: 7rem;
     margin-left: 4rem;
     text-align: center; }
     .paquetes .p-content:hover {
@@ -761,7 +769,7 @@ main {
           right: 0;
           bottom: -.5rem;
           height: 1px;
-          width: 80%;
+          width: 90%;
           background-color: #FF2A00; }
       .paquetes .p-content div p {
         text-align: left;
@@ -1044,7 +1052,9 @@ footer {
     gap: 1rem;
     padding: 2rem;
     margin-top: -7rem !important;
-    margin-bottom: 0.5rem; } }
+    margin-bottom: 0.5rem; }
+  .paquetes .p-content div h3::after {
+    width: 89%; } }
 
 @media (max-width: 768px) {
   .navbar-brand {
@@ -1221,6 +1231,11 @@ footer {
       margin: 11rem 2rem auto 3rem !important; }
   .video-gallery {
     margin-top: -5rem !important; }
+  .paquetes .p-content div h3 {
+    margin-left: 5rem;
+    text-align: left; }
+    .paquetes .p-content div h3::after {
+      width: 86%; }
   footer {
     background-image: url(../Assets/img/footer-768.png); } }
 
@@ -1366,6 +1381,8 @@ footer {
     .video-gallery .video-item {
       flex: 1 1 calc(90% - 1rem) !important;
       max-width: 90% !important; }
+  .paquetes .p-content div h3::after {
+    width: 79%; }
   footer {
     background-image: url(../Assets/img/footer-576.png); }
     footer p {
@@ -1530,11 +1547,95 @@ footer {
     margin-top: -7rem !important; }
   .video-gallery {
     margin-top: -11rem !important; }
+  .paquetes .p-content div h3 {
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 5rem;
+    margin-left: 0rem; }
+    .paquetes .p-content div h3::after {
+      width: 100%; }
+  .paquetes .p-content div p {
+    text-align: left;
+    width: 100%;
+    margin-left: 0rem; }
   footer {
     background-image: url(../Assets/img/footer-425.png); } }
 
 @media (max-width: 360px) {
-  .logo {
-    width: 90px; }
-  .navbar-brand {
-    right: 0; } }
+  .navbar-nav {
+    font-size: 0.9rem !important; }
+  .navbar-toggler {
+    font-size: 0.8rem; }
+  .dropdown-item {
+    font-size: 0.7rem !important; }
+  .cards-section .e-card {
+    width: 100% !important; }
+  .container-portada .portada-web {
+    max-width: 80%;
+    /* Incrementa el tamaño de la portada */
+    margin: 8rem auto 3rem auto !important; }
+  .workk {
+    margin-top: 32rem !important;
+    margin-left: 0.5;
+    margin-right: 0.5px; }
+  .boton-pack {
+    font-size: 0.6rem !important; }
+  .p-content {
+    margin-bottom: 4rem; }
+  h2 {
+    font-size: 1.5rem !important; }
+  h3 {
+    font-size: 1.5rem !important; }
+  .paquetes {
+    margin-top: -2rem !important; }
+  .fixed-back-button {
+    left: 0rem;
+    top: 45%;
+    width: 60px; }
+  h4 {
+    font-size: 0.9rem !important; } }
+
+@media (max-width: 320px) {
+  .infotop {
+    font-size: 0.7rem !important; }
+    .infotop a .texto {
+      font-size: 0.5rem !important; }
+    .infotop a .texto-2 {
+      font-size: 0.5rem !important; }
+    .infotop a .custom-span-dos {
+      font-size: 0.7rem !important; }
+    .infotop a .custom-span {
+      font-size: 0.7rem !important; }
+  .container-mac {
+    margin: 30rem auto 1rem auto !important; }
+    .container-mac .macbook {
+      transform: scale(1) !important;
+      /* Aumenta el tamaño al 120% */ }
+  .icon img {
+    width: 3rem;
+    /* Ajusta el tamaño de las imágenes según sea necesario */ }
+  .work-2 {
+    font-size: 1rem !important; }
+  h2 {
+    font-size: 1rem !important; }
+  p {
+    font-size: 0.9rem !important; }
+  .boton-pack {
+    left: 0.8rem; }
+  .img2 {
+    width: 70vw !important;
+    height: 100%; }
+  .img3 {
+    width: 100vw !important; }
+  .container-portada {
+    width: 100vw !important; }
+  .video-gallery {
+    width: 100vw !important; }
+  .paquetes .p-content div h3 {
+    font-size: 1.2rem !important; }
+  .fixed-back-button {
+    width: 45px; }
+  h4 {
+    font-size: 0.8rem !important; }
+  footer {
+    background-image: url(../Assets/img/footer-320.png); } }

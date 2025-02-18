@@ -249,7 +249,23 @@
     margin-top: -5rem !important;
     }
 
+    //PAQUETES
+.paquetes {
+    .p-content {
+    div {
+        h3 {
+            margin-left: 5rem;
+            text-align: left;
+                &::after {
+                    width: 86%;
+                }
+        }  }
+    }
+    }
+
 footer {
         background-image: url(../Assets/img/footer-768.png);
     }
+
+    
 }

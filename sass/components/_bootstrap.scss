@@ -2,7 +2,7 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -44,6 +44,10 @@
     width: 200px;
 }
 .navbar-brand {
+    display: flex;  
+    align-items: center; /* Asegura que el logo también se centre verticalmente */
+    justify-content: center; /* Centra horizontalmente dentro del navbar */
+    width: 100%; /* O asegúrate de que ocupe suficiente espacio */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

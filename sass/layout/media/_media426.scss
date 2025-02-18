@@ -203,6 +203,29 @@ h2 {
     margin-top: -11rem !important;
     }
 
+        //PAQUETES
+        .paquetes {
+            .p-content {
+            div {
+                h3 {
+                    font-size: map-get($font-size, size3);
+                    text-align: center; 
+                    margin-right: 5rem;
+                    margin-left: 0rem;                
+                    &::after {
+                            width: 100%;
+                        }
+                }  
+                p {
+                    text-align: left;
+                    width: 100%;
+                    margin-left: 0rem;
+                }
+            }
+            }
+            }
+
+//Footer
 footer {
     background-image: url(../Assets/img/footer-425.png);
 }

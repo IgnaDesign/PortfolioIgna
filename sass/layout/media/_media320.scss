@@ -1,10 +1,93 @@
-@media (max-width: 360px) {
+@media (max-width: 320px) {
 
-.logo {
-    width: 90px;
+    .infotop {
+        font-size: map-get($font-size, size6) !important;
+        a {
+            .texto {
+                font-size: map-get($font-size, size8) !important;
+            }
+            .texto-2 {
+                font-size: map-get($font-size, size8) !important;
+            }
+
+            .custom-span-dos {    
+                font-size: map-get($font-size, size6) !important;      
+            }
+
+            .custom-span { 
+                font-size: map-get($font-size, size6) !important;               
+            }
+        }
+    }
+
+//WEB-DEVELOPMEN
+.container-mac {
+    margin: 30rem auto 1rem auto !important;
+    .macbook {
+        transform: scale(1) !important; /* Aumenta el tamaño al 120% */
+    }
 }
 
-.navbar-brand {
-    right: 0;
+.icon img {
+    width: 3rem; /* Ajusta el tamaño de las imágenes según sea necesario */
+}
+
+.work-2 {
+    font-size: map-get($font-size, size3) !important;
+}
+
+h2 {
+    font-size: map-get($font-size, size3) !important;
+    }
+
+    p {
+        font-size: map-get($font-size, size4) !important;
+    }
+
+    .boton-pack {
+        left: 0.8rem;
+    }
+
+        // Graphic Design
+        .img2 {
+            width: 70vw !important;
+            height: 100%;
+        }
+
+        .img3 {
+            width: 100vw !important;
+        }
+    
+            // FREELANCER 2d/3d
+    .container-portada {
+        width: 100vw !important;
+        }
+        
+.video-gallery {
+    width: 100vw !important;
+    }
+
+//PAQUETES
+.paquetes {
+    .p-content {
+    div {
+        h3 {
+            font-size: map-get($font-size, size9) !important;
+        }  
+    }
+    }
+    }
+
+.fixed-back-button {
+    width: 45px;
+}
+
+//Footer
+    h4 {
+        font-size: map-get($font-size, size5) !important;
+        }
+
+footer {
+    background-image: url(../Assets/img/footer-320.png);
 }
 }
